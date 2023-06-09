@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfileController;
@@ -18,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 // Home Page
 Route::get('/', [PagesController::class, 'index']);
+
+// Contact Page
+Route::get('/contact', [ContactController::class, 'index']);
 
 // Posts
 // Route::resource('/blog', [PostsController::class]);
