@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
@@ -17,14 +18,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Home Page
+// Show Home Page
 Route::get('/', [PagesController::class, 'index']);
 
-// Contact Page
+// Show Contact Page
 Route::get('/contact', [ContactController::class, 'index']);
+
+// Show About Us Page
 
 // Posts
 // Route::resource('/blog', [PostsController::class]);
+Route::get('/about-us', [AboutusController::class, 'index']);
 
 // User Dashboard
 Route::get('/dashboard', function () {
