@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Home
-Route::get('/', function () {
-    return view('home');
-});
+// Home Page
+Route::get('/', [PagesController::class, 'index']);
+
+// Posts
+// Route::resource('/blog', [PostsController::class]);
 
 // User Dashboard
 Route::get('/dashboard', function () {
