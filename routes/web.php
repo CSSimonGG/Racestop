@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Formula1Controller;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -66,6 +67,13 @@ Route::get('/f1/drivers', [Formula1Controller::class, 'drivers']);
 
 // F1 Home
 Route::get('/f1/live', [Formula1Controller::class, 'live']);
+
+/**
+ * Policy Pages
+ */
+
+// Privacy Policy
+Route::get('/privacy-policy', [PolicyController::class, 'index']);
 
 // User Dashboard
 Route::get('/dashboard', function () {
