@@ -1,11 +1,13 @@
 import "./bootstrap";
 
-import Example from "./components/example.vue";
 import { createApp } from "vue";
+import example from "./components/example-component.vue";
+import headercomponent from "./components/HeaderComponent.vue";
 
 const app = createApp({
     components: {
-        Example,
+        example,
+        headercomponent,
     },
 });
 
