@@ -2,7 +2,9 @@
 
 <template>
     <header class="bg-white">
-        <div class="z-20 absolute inset-0 w-6/12 bg-white h-[3.25rem]"></div>
+        <div
+            class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 bg-white h-[3.25rem]"
+        ></div>
         <div class="z-10 absolute inset-0 bg-dark-red h-[3.25rem]"></div>
         <div class="bg-dark-red">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
@@ -11,8 +13,10 @@
                         RACESTOP
                     </span>
                 </div>
-                <div class="z-30 bg-light-red w-2/12 h-[3.25rem]">
-                    <ul class="flex item-center justify-between px-8 py-4">
+                <div class="z-30 bg-light-red w-2/12 h-[3.25rem] clip-polygon">
+                    <ul
+                        class="flex item-center justify-between py-4 pl-10 pr-8"
+                    >
                         <a
                             href="https://www.instagram.com/"
                             target="_blank"
@@ -165,7 +169,7 @@
                         </a>
                     </ul>
                 </div>
-                <div class="z-40 bg-dark-red w-2/12 h-[3.25rem]">
+                <div class="z-40 bg-dark-red w-1/12 h-[3.25rem]">
                     <span>Login</span>
                 </div>
             </div>
