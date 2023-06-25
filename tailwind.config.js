@@ -41,11 +41,26 @@ export default {
             lg: "1024px",
             // => @media (min-width: 1024px) { ... }
 
-            xl: "1440px",
+            xl: "1160px",
+            // => @media (min-width: 1160px) { ... }
+
+            "2xl": "1440px",
             // => @media (min-width: 1440px) { ... }
 
-            "2xl": "1736px",
+            "3xl": "1736px",
             // => @media (min-width: 1736px) { ... }
+
+            "4xl": "2250px",
+            // => @media (min-width: 2250px) { ... }
+
+            "5xl": "3150px",
+            // => @media (min-width: 3150px) { ... }
+
+            "6xl": "3750px",
+            // => @media (min-width: 3750px) { ... }
+
+            "7xl": "5250px",
+            // => @media (min-width: 5250px) { ... }
         },
     },
 

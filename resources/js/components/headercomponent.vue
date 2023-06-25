@@ -3,9 +3,8 @@
 <template>
     <header class="bg-white">
         <div
-            class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 2xl:w-64p bg-white h-[3.25rem]"
+            class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
-        <div class="z-10 absolute inset-0 bg-dark-red h-[3.25rem]"></div>
         <div class="bg-dark-red h-[3.25rem]">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
                 <div class="z-50 bg-white py-2 px-4 w-8/12">
