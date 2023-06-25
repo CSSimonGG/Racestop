@@ -7,14 +7,14 @@
         ></div>
         <div class="bg-dark-red h-[3.25rem]">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
-                <div class="z-50 bg-white py-2 px-4 w-8/12">
+                <div class="z-50 bg-white mx-4 w-8/12">
                     <span class="text-light-red text-3xl font-extrabold">
                         RACESTOP
                     </span>
                 </div>
                 <div class="z-30 bg-light-red w-2/12 h-[3.25rem] clip-polygon">
                     <ul
-                        class="flex item-center justify-between py-4 pl-10 pr-8"
+                        class="flex item-center justify-between my-4 ml-10 pr-8"
                     >
                         <a
                             href="https://www.instagram.com/"
