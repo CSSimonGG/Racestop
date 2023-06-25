@@ -29,8 +29,11 @@ export default {
             white: "#FFFFFF",
         },
         screens: {
-            sm: "640px",
+            xsm: "640px",
             // => @media (min-width: 640px) { ... }
+
+            sm: "700px",
+            // => @media (min-width: 700px) { ... }
 
             md: "870px",
             // => @media (min-width: 870px) { ... }
@@ -41,8 +44,8 @@ export default {
             xl: "1440px",
             // => @media (min-width: 1440px) { ... }
 
-            "2xl": "1536px",
-            // => @media (min-width: 1536px) { ... }
+            "2xl": "1736px",
+            // => @media (min-width: 1736px) { ... }
         },
     },
 

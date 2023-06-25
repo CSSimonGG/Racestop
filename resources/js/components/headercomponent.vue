@@ -3,10 +3,10 @@
 <template>
     <header class="bg-white">
         <div
-            class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 bg-white h-[3.25rem]"
+            class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 2xl:w-64p bg-white h-[3.25rem]"
         ></div>
         <div class="z-10 absolute inset-0 bg-dark-red h-[3.25rem]"></div>
-        <div class="bg-dark-red">
+        <div class="bg-dark-red h-[3.25rem]">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
                 <div class="z-50 bg-white py-2 px-4 w-8/12">
                     <span class="text-light-red text-3xl font-extrabold">
@@ -169,8 +169,17 @@
                         </a>
                     </ul>
                 </div>
-                <div class="z-40 bg-dark-red w-1/12 h-[3.25rem]">
-                    <span>Login</span>
+                <div class="z-40 bg-dark-red w-2/12 h-[3.25rem]">
+                    <span class="flex my-3">
+                        <img
+                            src="/build/images/user-profile.png"
+                            alt="user"
+                            class=""
+                        />
+                        <a href="/login" class="text-white font-bold my-1 ml-2"
+                            >Login</a
+                        >
+                    </span>
                 </div>
             </div>
         </div>
@@ -181,8 +190,10 @@
                     <li><a href="/f1/news">F1 NEWS</a></li>
                     <li><a href="/f1/calender">F1 CALENDER</a></li>
                     <li><a href="/f1/statistics">F1 STATISTICS</a></li>
-                    <li><a href="/f1/standings">F1 STANDINGS</a></li>
-                    <li><a href="/">CHAMPIONSHIPS</a></li>
+                    <li class="max-sm:hidden">
+                        <a href="/f1/standings">F1 STANDINGS</a>
+                    </li>
+                    <li class="max-md:hidden"><a href="/">CHAMPIONSHIPS</a></li>
                 </ul>
             </nav>
         </div>
