@@ -5,9 +5,9 @@
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
-        <div class="bg-dark-red h-[3.25rem]">
+        <div class="bg-dark-red h-[3.25rem] relative">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
-                <div class="z-50 bg-white mx-4 w-8/12">
+                <div class="z-100 bg-white mx-4 w-8/12">
                     <span class="text-light-red text-3xl font-extrabold">
                         RACESTOP
                     </span>
@@ -192,11 +192,45 @@
                     <li class="max-sm:hidden">
                         <a href="/f1/standings">F1 STANDINGS</a>
                     </li>
-                    <li class="max-md:hidden"><a href="/">CHAMPIONSHIPS</a></li>
+                    <li class="max-md:hidden dropdown group relative">
+                        <span
+                            class="z-0 dropdown-toggle group-hover:bg-yellow px-5 pb-5 pt-[19px]"
+                        >
+                            <a href="/">CHAMPIONSHIPS</a>
+                        </span>
+                        <div
+                            class="dropdown-content hidden group-hover:block hover:block absolute bg-night text-white px-4 py-5 border-t-20 border-yellow"
+                        >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >MOTOGP</a
+                            >
+                            <a href="/f1" class="block pb-4 hover:text-yellow"
+                                >F1</a
+                            >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >F2</a
+                            >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >F3</a
+                            >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >FORMULA E</a
+                            >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >INDYCAR</a
+                            >
+                            <a href="" class="block pb-4 hover:text-yellow"
+                                >NASCAR</a
+                            >
+                            <a href="" class="block hover:text-yellow"
+                                >Le Mans</a
+                            >
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="bg-yellow p-0.5"></div>
+        <div class="z-50 bg-yellow p-0.5"></div>
         <div class="bg-night p-0.5"></div>
     </header>
 </template>

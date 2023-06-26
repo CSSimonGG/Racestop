@@ -19,6 +19,13 @@ export default {
                     ...defaultTheme.fontFamily.sans,
                 ],
             },
+            zIndex: {
+                60: "60",
+                70: "70",
+                80: "80",
+                90: "90",
+                100: "100",
+            },
         },
         colors: {
             yellow: "#FAD732",
@@ -61,6 +68,16 @@ export default {
 
             "7xl": "5250px",
             // => @media (min-width: 5250px) { ... }
+        },
+        borderWidth: {
+            DEFAULT: "1px",
+            0: "0",
+            2: "2px",
+            3: "3px",
+            4: "4px",
+            6: "6px",
+            8: "8px",
+            20: "20px",
         },
     },
 
