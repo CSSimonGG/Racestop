@@ -34,16 +34,17 @@ export default {
             night: "#131315",
             jet: "#2F2F2F",
             white: "#FFFFFF",
+            gray: "#EEEEEE",
         },
         screens: {
             xsm: "640px",
             // => @media (min-width: 640px) { ... }
 
-            sm: "700px",
+            sm: "750px",
             // => @media (min-width: 700px) { ... }
 
-            md: "870px",
-            // => @media (min-width: 870px) { ... }
+            md: "910px",
+            // => @media (min-width: 910px) { ... }
 
             lg: "1024px",
             // => @media (min-width: 1024px) { ... }

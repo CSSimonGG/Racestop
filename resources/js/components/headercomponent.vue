@@ -184,13 +184,31 @@
         </div>
         <div class="max-w-5xl mx-auto p-4">
             <nav class="font-night font-bold">
-                <ul class="flex space-x-12">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/f1/news">F1 NEWS</a></li>
-                    <li><a href="/f1/calender">F1 CALENDER</a></li>
-                    <li><a href="/f1/statistics">F1 STATISTICS</a></li>
+                <ul class="flex">
+                    <li>
+                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                            <a href="/">HOME</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                            <a href="/f1/news">F1 NEWS</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                            <a href="/f1/calender">F1 CALENDER</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                            <a href="/f1/statistics">F1 STATISTICS</a>
+                        </span>
+                    </li>
                     <li class="max-sm:hidden">
-                        <a href="/f1/standings">F1 STANDINGS</a>
+                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                            <a href="/f1/standings">F1 STANDINGS</a>
+                        </span>
                     </li>
                     <li class="max-md:hidden dropdown group relative">
                         <span
