@@ -5,18 +5,23 @@
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
-        <div class="bg-dark-red h-[3.25rem] relative">
+        <div class="5xsm:bg-dark-red h-[3.25rem] relative">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
                 <div class="z-100 bg-white mx-4 w-8/12">
-                    <span class="text-light-red text-3xl font-extrabold">
+                    <span
+                        class="text-light-red text-xl 3xsm:text-2xl 2xsm:text-3xl font-extrabold"
+                    >
                         RACESTOP
                     </span>
                 </div>
-                <div class="z-30 bg-light-red w-2/12 h-[3.25rem] clip-polygon">
+                <div
+                    class="z-30 bg-light-red max-5xsm:mr-0 max-2xsm:mr-3 lg:w-2/12 h-[3.25rem] 5xsm:clip-polygon"
+                >
                     <ul
-                        class="flex item-center justify-between my-4 ml-10 pr-8"
+                        class="max-2xsm:hidden flex place-items-center my-4 ml-10 pr-8"
                     >
                         <a
+                            class="pr-2"
                             href="https://www.instagram.com/"
                             target="_blank"
                             title="Racestop on Instagram"
@@ -56,6 +61,7 @@
                             </li>
                         </a>
                         <a
+                            class="pr-2"
                             href="https://www.facebook.com/"
                             target="_blank"
                             title="Racestop on Facebook"
@@ -95,6 +101,7 @@
                             </li>
                         </a>
                         <a
+                            class="pr-2"
                             href="https://www.twitter.com/"
                             target="_blank"
                             title="Racestop on Twitter"
@@ -167,22 +174,34 @@
                             </li>
                         </a>
                     </ul>
+                    <span class="flex items-center 2xsm:hidden mx-10 mt-4">
+                        <div class="bg-white w-6 h-1"></div>
+                    </span>
                 </div>
-                <div class="z-40 bg-dark-red w-2/12 h-[3.25rem]">
-                    <span class="flex my-3">
-                        <img
-                            src="/build/images/user-profile.png"
-                            alt="user"
-                            class=""
-                        />
-                        <a href="/login" class="text-white font-bold my-1 ml-2"
+                <div
+                    class="z-40 max-4xsm:hidden bg-dark-red w-2/12 h-[3.25rem]"
+                >
+                    <!-- Not Loged In- -->
+                    <span
+                        class="flex max-3xsm:items-center max-3xsm:justify-center my-3"
+                    >
+                        <a href="/login" class="pr-2"
+                            ><img
+                                src="/build/images/user-profile.png"
+                                alt="user"
+                                class="w-8 h-8"
+                            />
+                        </a>
+                        <a
+                            href="/login"
+                            class="max-2xsm:hidden text-white font-bold my-1"
                             >Login</a
                         >
                     </span>
                 </div>
             </div>
         </div>
-        <div class="max-w-5xl mx-auto p-4">
+        <div class="max-2xsm:hidden max-w-5xl mx-auto p-4">
             <nav class="font-night font-bold">
                 <ul class="flex">
                     <li>
@@ -205,7 +224,7 @@
                             <a href="/f1/statistics">F1 STATISTICS</a>
                         </span>
                     </li>
-                    <li class="max-sm:hidden">
+                    <li class="max-xsm:hidden">
                         <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
                             <a href="/f1/standings">F1 STANDINGS</a>
                         </span>

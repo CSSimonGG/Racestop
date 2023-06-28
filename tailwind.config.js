@@ -37,11 +37,23 @@ export default {
             gray: "#EEEEEE",
         },
         screens: {
-            xsm: "640px",
+            "5xsm": "280px",
+            // => @media (min-width: 280px) { ... }
+
+            "4xsm": "320px",
+            // => @media (min-width: 320px) { ... }
+
+            "3xsm": "425px",
+            // => @media (min-width: 425px) { ... }
+
+            "2xsm": "640px",
             // => @media (min-width: 640px) { ... }
 
-            sm: "750px",
-            // => @media (min-width: 700px) { ... }
+            xsm: "750px",
+            // => @media (min-width: 750px) { ... }
+
+            sm: "850px",
+            // => @media (min-width: 850px) { ... }
 
             md: "910px",
             // => @media (min-width: 910px) { ... }
