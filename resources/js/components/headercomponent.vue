@@ -185,7 +185,7 @@
                     <span
                         class="flex max-3xsm:items-center max-3xsm:justify-center my-3"
                     >
-                        <a href="/login" class="pr-2"
+                        <a href="/profile" class="pr-2"
                             ><img
                                 src="/build/images/user-profile.png"
                                 alt="user"
@@ -193,9 +193,9 @@
                             />
                         </a>
                         <a
-                            href="/login"
+                            href="/profile"
                             class="max-2xsm:hidden text-white font-bold my-1"
-                            >Login</a
+                            >Profile</a
                         >
                     </span>
                 </div>
