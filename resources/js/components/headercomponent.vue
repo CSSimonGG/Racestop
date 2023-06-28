@@ -11,7 +11,7 @@
                     <span
                         class="text-light-red text-xl 3xsm:text-2xl 2xsm:text-3xl font-extrabold"
                     >
-                        RACESTOP
+                        <a href="/"> RACESTOP </a>
                     </span>
                 </div>
                 <div
@@ -205,7 +205,7 @@
             <nav class="font-night font-bold">
                 <ul class="flex">
                     <li>
-                        <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
+                        <span class="pr-6 pb-5 pt-[19px]">
                             <a href="/">HOME</a>
                         </span>
                     </li>
@@ -234,6 +234,21 @@
                             class="z-0 dropdown-toggle group-hover:bg-yellow px-5 pb-5 pt-[19px]"
                         >
                             <a href="/">CHAMPIONSHIPS</a>
+                            <svg
+                                class="z-40 absolute top-2.5 left-16"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="gray"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                width="32"
+                                height="32"
+                            >
+                                <line x1="12" y1="17" x2="16" y2="12" />
+                                <line x1="12" y1="17" x2="8" y2="12" />
+                            </svg>
                         </span>
                         <div
                             class="dropdown-content hidden group-hover:block hover:block absolute bg-night text-white px-4 py-5 border-t-20 border-yellow"
