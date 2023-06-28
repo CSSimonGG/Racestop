@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <header class="bg-white">
+    <header class="bg-white h-[7.25rem] fixed inset-0">
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
@@ -203,7 +203,7 @@
         </div>
         <div class="max-2xsm:hidden max-w-5xl mx-auto p-4">
             <nav class="font-night font-bold">
-                <ul class="flex">
+                <ul class="flex max-w-5xl">
                     <li>
                         <span class="pr-6 pb-5 pt-[19px]">
                             <a href="/">HOME</a>
@@ -224,12 +224,12 @@
                             <a href="/f1/statistics">F1 STATISTICS</a>
                         </span>
                     </li>
-                    <li class="max-xsm:hidden">
+                    <li class="max-sm:hidden">
                         <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
                             <a href="/f1/standings">F1 STANDINGS</a>
                         </span>
                     </li>
-                    <li class="max-md:hidden dropdown group relative">
+                    <li class="max-lg:hidden dropdown group relative">
                         <span
                             class="z-0 dropdown-toggle group-hover:bg-yellow px-5 pb-5 pt-[19px]"
                         >
@@ -278,6 +278,9 @@
                                 >Le Mans</a
                             >
                         </div>
+                    </li>
+                    <li class="">
+                        <div class="">MORE</div>
                     </li>
                 </ul>
             </nav>
