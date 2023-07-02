@@ -7,4 +7,43 @@
         @csrf
         <button>Logout</button>
     </form>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet quaerat consequuntur distinctio? Sequi
+        ratione consequatur repellat repudiandae quam, debitis, excepturi accusamus, cum esse quasi nam! Nulla
+        praesentium suscipit quasi?</div>
 </x-app-layout>
