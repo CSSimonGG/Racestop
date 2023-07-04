@@ -8,13 +8,21 @@ export default {
     methods: {
         toggleNav: function () {
             this.showMenu = !this.showMenu;
+            this.toggleScrolling();
+        },
+        toggleScrolling() {
+            if (this.showMenu) {
+                document.body.classList.add("overflow-hidden");
+            } else {
+                document.body.classList.remove("overflow-hidden");
+            }
         },
     },
 };
 </script>
 
 <template>
-    <header class="bg-white h-[7.25rem] fixed inset-0">
+    <header class="bg-white h-[3.25rem] 2xsm:h-[7.25rem] fixed inset-0">
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
@@ -188,7 +196,44 @@ export default {
                         </a>
                     </ul>
                     <span class="flex items-center 2xsm:hidden mx-10 mt-4">
-                        <div class="bg-white w-6 h-1"></div>
+                        <div @click="toggleNav" class="flex">
+                            <button
+                                type="button"
+                                class="flex"
+                                aria-label="toggle menu"
+                            >
+                                <span
+                                    :class="showMenu ? 'hidden' : 'flex'"
+                                ></span>
+                                <span
+                                    :class="showMenu ? 'flex' : 'hidden'"
+                                ></span>
+                                <svg
+                                    :class="showMenu ? 'hidden' : 'flex'"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50"
+                                    width="24px"
+                                    height="24px"
+                                    class=""
+                                >
+                                    <path
+                                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+                                    />
+                                </svg>
+                                <svg
+                                    :class="showMenu ? 'flex' : 'hidden'"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 30 30"
+                                    width="24px"
+                                    height="24px"
+                                    class=""
+                                >
+                                    <path
+                                        d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
                     </span>
                 </div>
                 <div
@@ -324,14 +369,79 @@ export default {
                     </button>
                 </div>
             </nav>
-            <div
-                :class="showMenu ? 'flex' : 'hidden'"
-                class="absolute top-28 left-0 bg-night h-96 w-full"
-            ></div>
+        </div>
+        <div
+            :class="showMenu ? 'flex' : 'hidden'"
+            class="absolute top-14 2xsm:top-28 left-0 bg-night h-screen w-full justify-center"
+        >
+            <span
+                class="text-xl text-white font-bold 2xsm:flex max-w-5xl 2xsm:space-x-16 lg:space-x-64 mt-8"
+            >
+                <ul class="space-y-4">
+                    <li class="move-right-on-hover">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/news">F1 News</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/calender">F1 Calendar</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/statistics">F1 Statistics</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/drivers">F1 Drivers</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/teams">F1 Teams</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f1/results">F1 Results</a>
+                    </li>
+                </ul>
+                <ul class="space-y-4 max-2xsm:mt-4">
+                    <li class="move-right-on-hover">
+                        <a href="/championships">Championships</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f2">Formula 2</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/f3">Formula 3</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/fe">Formula E</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/indycar">Indycar</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/nascar">Nascar</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/endurance-racing">Endurance racing</a>
+                    </li>
+                </ul>
+                <div class="max-lg:hidden">
+                    <h1 class="text-light-red text-2xl font-extrabold mb-2">
+                        RACESTOP
+                    </h1>
+                    <span
+                        class="bg-light-red hover:bg-dark-red px-4 py-3 rounded-md text-lg"
+                    >
+                        <a href="/profile">Profile</a>
+                    </span>
+                </div>
+            </span>
         </div>
         <div class="z-50 bg-yellow p-0.5"></div>
         <div class="bg-night p-0.5"></div>
     </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+.move-right-on-hover {
+    @apply transition-transform duration-300 transform hover:translate-x-4;
+}
+</style>
