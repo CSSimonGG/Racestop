@@ -291,9 +291,9 @@ export default {
                         <span
                             class="z-0 dropdown-toggle group-hover:bg-yellow px-5 pb-5 pt-[19px]"
                         >
-                            <a href="/">CHAMPIONSHIPS</a>
+                            <a href="/championships">CHAMPIONSHIPS</a>
                             <svg
-                                class="z-40 absolute top-2.5 left-16"
+                                class="z-40 absolute top-2.5 left-[72px]"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="none"
@@ -375,9 +375,9 @@ export default {
             class="absolute top-14 2xsm:top-28 left-0 bg-night h-screen w-full justify-center"
         >
             <span
-                class="text-xl text-white font-bold 2xsm:flex max-w-5xl 2xsm:space-x-16 lg:space-x-64 mt-8"
+                class="text-xl text-white font-bold 2xsm:flex max-w-5xl 2xsm:space-x-32 lg:space-x-64 mt-8"
             >
-                <ul class="space-y-4">
+                <ul class="space-y-4 max-lg:absolute max-lg:left-12">
                     <li class="move-right-on-hover">
                         <a href="/">Home</a>
                     </li>
@@ -400,7 +400,9 @@ export default {
                         <a href="/f1/results">F1 Results</a>
                     </li>
                 </ul>
-                <ul class="space-y-4 max-2xsm:mt-4">
+                <ul
+                    class="space-y-4 max-2xsm:mt-4 max-2xsm:absolute max-2xsm:left-12 max-2xsm:top-80"
+                >
                     <li class="move-right-on-hover">
                         <a href="/championships">Championships</a>
                     </li>
@@ -420,17 +422,25 @@ export default {
                         <a href="/nascar">Nascar</a>
                     </li>
                     <li class="move-right-on-hover">
-                        <a href="/endurance-racing">Endurance racing</a>
+                        <a href="/endurance-racing">Endurance Racing</a>
                     </li>
                 </ul>
                 <div class="max-lg:hidden">
+                    <h2 class="text-sm">WELCOME TO</h2>
                     <h1 class="text-light-red text-2xl font-extrabold mb-2">
                         RACESTOP
                     </h1>
+                    <div class="font-medium text-base mt-4 mb-8">
+                        <p>Benefits of signing up:</p>
+                        <p>- More Exclusive Content</p>
+                        <p>- Enter Giveaways</p>
+                        <p>- Share Your Thoughts</p>
+                        <p>And Way More</p>
+                    </div>
                     <span
-                        class="bg-light-red hover:bg-dark-red px-4 py-3 rounded-md text-lg"
+                        class="bg-light-red hover:bg-dark-red px-4 py-3 rounded-md text-base"
                     >
-                        <a href="/profile">Profile</a>
+                        <a href="/profile">To Profile</a>
                     </span>
                 </div>
             </span>
