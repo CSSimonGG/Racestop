@@ -23,9 +23,10 @@
         <headercomponent></headercomponent>
 
         <!-- Page Content -->
-        <main>
+        <main class="">
             {{ $slot }}
         </main>
+        <footercomponent></footercomponent>
     </div>
 </body>
 

@@ -35,6 +35,7 @@ export default {
             jet: "#2F2F2F",
             white: "#FFFFFF",
             gray: "#EEEEEE",
+            silver: "#A8A8AA",
         },
         screens: {
             "5xsm": "280px",
