@@ -279,12 +279,12 @@ export default {
                     </li>
                     <li>
                         <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
-                            <a href="/f1/statistics">F1 STATISTICS</a>
+                            <a href="/f1/standings">F1 STANDINGS</a>
                         </span>
                     </li>
                     <li class="max-sm:hidden">
                         <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
-                            <a href="/f1/standings">F1 STANDINGS</a>
+                            <a href="/f1/statistics">F1 STATISTICS</a>
                         </span>
                     </li>
                     <li class="max-lg:hidden dropdown group relative">
@@ -388,6 +388,9 @@ export default {
                         <a href="/f1/calender">F1 Calendar</a>
                     </li>
                     <li class="move-right-on-hover">
+                        <a href="/f1/standings">F1 Standings</a>
+                    </li>
+                    <li class="move-right-on-hover">
                         <a href="/f1/statistics">F1 Statistics</a>
                     </li>
                     <li class="move-right-on-hover">
@@ -395,9 +398,6 @@ export default {
                     </li>
                     <li class="move-right-on-hover">
                         <a href="/f1/teams">F1 Teams</a>
-                    </li>
-                    <li class="move-right-on-hover">
-                        <a href="/f1/results">F1 Results</a>
                     </li>
                 </ul>
                 <ul
