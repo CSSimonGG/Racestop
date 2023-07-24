@@ -35,6 +35,7 @@ export default {
             jet: "#2F2F2F",
             white: "#FFFFFF",
             gray: "#EEEEEE",
+            platinum: "#D9D9D9",
             silver: "#A8A8AA",
         },
         screens: {
