@@ -20,6 +20,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Admin
+Route::get('/admin', [PostsController::class, 'create']);
+
+//
+Route::post('/', [PostsController::class, 'store']);
+
 // Show Home Page
 Route::get('/', [PostsController::class, 'index']);
 
