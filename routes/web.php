@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Show Home Page
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PostsController::class, 'index']);
 
 // Show Contact Page
 Route::get('/contact', [ContactController::class, 'index']);
