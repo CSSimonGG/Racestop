@@ -18,6 +18,28 @@
                 </div>
                 <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Standings</div>
             </div>
+
+            <h1 class="font-bold text-2xl ml-5 mb-5">Latest News</h1>
+            <div class="ml-5 mb-5 space-y-5">
+                @foreach ($posts as $post)
+                    <div>
+                        <a href="/news/{{ $post->slug }}">
+                            <div
+                                class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                <div class="h-[77px] w-[98px] bg-yellow"></div>
+                                <div>
+                                    <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">{{ $post->category }}
+                                    </h2>
+                                    <h2 class="pl-3 font-bold hover:underline">{{ $post->title }}</h2>
+                                </div>
+                                {{-- {{ $post->user->name }} --}}
+                                {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+
         </span>
     </div>
 </x-app-layout>
