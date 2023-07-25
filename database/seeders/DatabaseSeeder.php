@@ -22,5 +22,8 @@ class DatabaseSeeder extends Seeder
         // Roles and Permission Seeders
         $this->call(RoleSeeder::class);
         $this->call(AdminSeeder::class);
+
+        // Posts Factory
+        \App\Models\Post::factory(10)->create();
     }
 }
