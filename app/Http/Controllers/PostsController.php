@@ -37,9 +37,8 @@ class PostsController extends Controller
 
         $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
 
-        dd($newImageName);
+        $request->image->move(public_path('images'), $newImageName);
     }
-
     /**
      * Display the specified resource.
      */
