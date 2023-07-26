@@ -37,6 +37,7 @@ export default {
             gray: "#EEEEEE",
             platinum: "#D9D9D9",
             silver: "#A8A8AA",
+            green: "#33cc99",
         },
         screens: {
             "5xsm": "280px",

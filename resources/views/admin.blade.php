@@ -7,8 +7,18 @@
 
         @if (Auth::check())
 
+            @if (session()->has('message'))
+                <div class="mb-5 2xsm:w-[800px] flex justify-center ">
+                    <div class="bg-white rounded-xl pt-3">
+                        <p class="mx-6 pb-3 text-green">
+                            {{ session()->get('message') }}
+                        </p>
+                    </div>
+                </div>
+            @endif
+
             @if ($errors->any())
-                <div class="mb-5 w-[800px] flex justify-center">
+                <div class="mb-5 s2xsm:w-[800px] flex justify-center">
                     <ul class="bg-white rounded-xl pt-3">
                         @foreach ($errors->all() as $error)
                             <li class="mx-6 pb-3 text-dark-red">
@@ -39,7 +49,7 @@
 
                     <div class="mb-12">
                         <label for="">Tags: </label>
-                        <select name="tags" id="tags">
+                        <select name="category" id="category">
                             <option value="f1">F1</option>
                             <option value="f2">F2</option>
                             <option value="f3">F3</option>
