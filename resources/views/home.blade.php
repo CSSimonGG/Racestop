@@ -29,13 +29,15 @@
             </div>
 
             <h1 class="font-bold text-2xl ml-5 mb-5">Latest News</h1>
-            <div class="ml-5 mb-5 space-y-5">
+            <div class="ml-5 mb-12 grid grid-cols-2 gap-4 w-[660px]">
                 @foreach ($posts as $post)
-                    <div>
-                        <a href="/news/{{ $post->slug }}">
+                    <div class="@if ($post->id % 2 === 0) float-right @else float-left @endif">
+                        <a href="/{{ $post->slug }}">
                             <div
-                                class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                <div class="h-[77px] w-[98px] bg-yellow"></div>
+                                class="h-[80px] w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                <div class="h-[77px] w-[98px] bg-yellow">
+                                    <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}" alt="img">
+                                </div>
                                 <div>
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">{{ $post->category }}
                                     </h2>
