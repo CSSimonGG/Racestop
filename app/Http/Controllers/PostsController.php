@@ -54,12 +54,15 @@ class PostsController extends Controller
     }
     /**
      * Display the specified resource.
+     *
+     * @param  string  $slug
+     * @return \Illuminate\Http\Response
      */
-    public function show(string $id)
+    public function show($slug)
     {
-        //
+        return view('blog.show')
+            ->with('post', Post::where('slug', $slug)->first());
     }
-
     /**
      * Show the form for editing the specified resource.
      */

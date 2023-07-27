@@ -29,6 +29,12 @@ Route::post('/', [PostsController::class, 'store']);
 // Show Home Page
 Route::get('/', [PostsController::class, 'index']);
 
+// News Page
+Route::get('/news', [PagesController::class, 'index']);
+
+// 
+Route::get('/news/{slug}', [PostsController::class, 'show']);
+
 // Show Contact Page
 Route::get('/contact', [ContactController::class, 'index']);
 

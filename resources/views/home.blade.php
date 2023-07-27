@@ -32,7 +32,7 @@
             <div class="ml-5 mb-12 grid grid-cols-2 gap-4 w-[660px]">
                 @foreach ($posts as $post)
                     <div class="@if ($post->id % 2 === 0) float-right @else float-left @endif">
-                        <a href="/{{ $post->slug }}">
+                        <a href="/news/{{ $post->slug }}">
                             <div
                                 class="h-[80px] w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
                                 <div class="h-[77px] w-[98px] bg-yellow">

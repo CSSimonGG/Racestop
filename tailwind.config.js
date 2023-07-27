@@ -36,6 +36,7 @@ export default {
             white: "#FFFFFF",
             gray: "#EEEEEE",
             platinum: "#D9D9D9",
+            "dark-gray": "#2f3237",
             silver: "#A8A8AA",
             green: "#33cc99",
         },
