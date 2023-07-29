@@ -7,7 +7,8 @@
             @if (Auth::check())
                 <div class="bg-night h-20 flex justify-center">
                     <div class="mt-6">
-                        <a href="/admin" class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
+                        <a href="/news/create"
+                            class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
                             Create post
                         </a>
                     </div>
@@ -38,10 +39,10 @@
                                 <div class="h-[77px] w-[98px] bg-yellow">
                                     <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}" alt="img">
                                 </div>
-                                <div>
+                                <div class="w-4/6 pr-1">
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">{{ $post->category }}
                                     </h2>
-                                    <h2 class="pl-3 font-bold hover:underline">{{ $post->title }}</h2>
+                                    <h2 class="pl-3 font-bold hover:underline">{{ Str::limit($post->title, 45) }}</h2>
                                 </div>
                                 {{-- {{ $post->user->name }} --}}
                                 {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}

@@ -13,7 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('home')
+        return view('news')
             ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
     }
 
@@ -22,7 +22,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('admin');
+        return view('news.create');
     }
 
     /**
@@ -50,8 +50,9 @@ class PostsController extends Controller
             'user_id' => auth()->user()->id
         ]);
 
-        return redirect('/admin')->with('message', 'Succesfully Posted New Blog');
+        return redirect('/news/create')->with('message', 'Succesfully Posted New Blog');
     }
+
     /**
      * Display the specified resource.
      *
@@ -60,24 +61,56 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-        return view('blog.show')
+        return view('news.show')
             ->with('post', Post::where('slug', $slug)->first());
     }
+
     /**
      * Show the form for editing the specified resource.
+     *
+     * @param  string  $slug
+     * @return \Illuminate\Http\Response
      */
-    public function edit(string $id)
+    public function edit($slug)
     {
-        //
+        return view('news.edit')
+            ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
      * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  string  $slug
+     * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $slug)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'required|mimes:jpg,png,jpeg|max:5048',
+            'category' => 'required'
+        ]);
+
+        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
+
+        $request->image->move(public_path('images'), $newImageName);
+
+        Post::where('slug', $slug)
+            ->update([
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
+                'image_path' => $newImageName,
+                'category' => $request->input('category'),
+                'user_id' => auth()->user()->id
+            ]);
+
+        return redirect('/')
+            ->with('message', 'Your post has been updated!');
     }
+
 
     /**
      * Remove the specified resource from storage.

@@ -9,7 +9,12 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('news')
+        return view('home')
             ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
+    }
+
+    public function admin()
+    {
+        return view('admin');
     }
 }

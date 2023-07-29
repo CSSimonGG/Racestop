@@ -20,29 +20,43 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Admin
-Route::get('/admin', [PostsController::class, 'create']);
-
-//
-Route::post('/', [PostsController::class, 'store']);
+// Admin Dashboard
+Route::get('admin', [PagesController::class, 'admin']);
 
 // Show Home Page
-Route::get('/', [PostsController::class, 'index']);
+Route::get('/', [PagesController::class, 'index']);
+
+/**
+ * Blog Routes
+ */
 
 // News Page
-Route::get('/news', [PagesController::class, 'index']);
+Route::get('/news', [PostsController::class, 'index']);
 
-// 
+// Show Blog Post
 Route::get('/news/{slug}', [PostsController::class, 'show']);
+
+// Create New Blog Post
+Route::get('/news/create', [PostsController::class, 'create']);
+
+// Store New Blog Post
+Route::post('/', [PostsController::class, 'store']);
+
+// Edit Blog Post
+Route::get('/news/{slug}/edit', [PostsController::class, 'edit']);
+
+// Update Blog Post
+Route::put('/news/{slug}', [PostsController::class, 'update']);
+
+/**
+ * Legal and Contact Routes
+ */
 
 // Show Contact Page
 Route::get('/contact', [ContactController::class, 'index']);
 
 // Show About Us Page
 Route::get('/about-us', [AboutusController::class, 'index']);
-
-// Posts
-// Route::resource('/blog', [PostsController::class]);
 
 /**
  * F1 Routes
