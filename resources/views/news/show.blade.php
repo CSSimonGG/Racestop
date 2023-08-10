@@ -30,12 +30,22 @@
                 </div>
             </article>
             @if (Auth::check())
-                <div class="bg-night h-20 flex justify-center">
+                <div class="bg-night h-20 flex justify-center space-x-3">
                     <div class="mt-6">
                         <a href="/news/{{ $post->slug }}/edit"
                             class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
                             Edit Post
                         </a>
+                    </div>
+                    <div>
+                        <form action="/news/{{ $post->slug }}/delete" method="POST" class="mt-4">
+                            @csrf
+                            @method('delete')
+                            <button class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded"
+                                type="submit">
+                                Delete
+                            </button>
+                        </form>
                     </div>
                 </div>
             @endif

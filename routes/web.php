@@ -48,6 +48,9 @@ Route::get('/news/{slug}/edit', [PostsController::class, 'edit']);
 // Update Blog Post
 Route::put('/news/{slug}', [PostsController::class, 'update']);
 
+// Delete Blog Post
+Route::delete('/news/{slug}/delete', [PostsController::class, 'destroy']);
+
 /**
  * Legal and Contact Routes
  */

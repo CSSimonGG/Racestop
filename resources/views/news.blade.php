@@ -16,10 +16,8 @@
                                 <div class="pr-1 w-4/6">
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">{{ $post->category }}
                                     </h2>
-                                    <h2 class="pl-3 font-bold hover:underline">{{ $post->title }}</h2>
+                                    <h2 class="pl-3 font-bold hover:underline">{{ Str::limit($post->title, 45) }}</h2>
                                 </div>
-                                {{-- {{ $post->user->name }} --}}
-                                {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}
                             </div>
                         </a>
                     </div>
