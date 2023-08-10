@@ -33,14 +33,14 @@ Route::get('/', [PagesController::class, 'index']);
 // News Page
 Route::get('/news', [PostsController::class, 'index']);
 
-// Show Blog Post
-Route::get('/news/{slug}', [PostsController::class, 'show']);
-
 // Create New Blog Post
 Route::get('/news/create', [PostsController::class, 'create']);
 
 // Store New Blog Post
 Route::post('/', [PostsController::class, 'store']);
+
+// Show Blog Post
+Route::get('/news/{slug}', [PostsController::class, 'show']);
 
 // Edit Blog Post
 Route::get('/news/{slug}/edit', [PostsController::class, 'edit']);
