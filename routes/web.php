@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Admin Dashboard
-Route::get('admin', [PagesController::class, 'admin']);
+Route::get('admin', [PagesController::class, 'admin'])->middleware('role:admin');
 
 // Show Home Page
 Route::get('/', [PagesController::class, 'index']);
@@ -33,23 +33,28 @@ Route::get('/', [PagesController::class, 'index']);
 // News Page
 Route::get('/news', [PostsController::class, 'index']);
 
-// Create New Blog Post
-Route::get('/news/create', [PostsController::class, 'create']);
+// Blog Posts Editor Authentication
+Route::middleware('auth', 'role:writer')->group(
+    function () {
+        // Create New Blog Post
+        Route::get('/news/create', [PostsController::class, 'create']);
 
-// Store New Blog Post
-Route::post('/', [PostsController::class, 'store']);
+        // Store New Blog Post
+        Route::post('/', [PostsController::class, 'store']);
+
+        // Edit Blog Post
+        Route::get('/news/{slug}/edit', [PostsController::class, 'edit']);
+
+        // Update Blog Post
+        Route::put('/news/{slug}', [PostsController::class, 'update']);
+
+        // Delete Blog Post
+        Route::delete('/news/{slug}/delete', [PostsController::class, 'destroy']);
+    }
+);
 
 // Show Blog Post
 Route::get('/news/{slug}', [PostsController::class, 'show']);
-
-// Edit Blog Post
-Route::get('/news/{slug}/edit', [PostsController::class, 'edit']);
-
-// Update Blog Post
-Route::put('/news/{slug}', [PostsController::class, 'update']);
-
-// Delete Blog Post
-Route::delete('/news/{slug}/delete', [PostsController::class, 'destroy']);
 
 /**
  * Legal and Contact Routes
