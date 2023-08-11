@@ -37,20 +37,22 @@ class PostsController extends Controller
             'category' => 'required'
         ]);
 
-        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
+        $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
+
+        $newImageName = uniqid() . '-' . $slug . '.' . $request->image->extension();
 
         $request->image->move(public_path('images'), $newImageName);
 
         Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
-            'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
+            'slug' => $slug,
             'image_path' => $newImageName,
             'category' => $request->input('category'),
             'user_id' => auth()->user()->id
         ]);
 
-        return redirect('/news/create')->with('message', 'Succesfully Posted New Blog');
+        return redirect('/create')->with('message', 'Succesfully Posted New Blog');
     }
 
     /**

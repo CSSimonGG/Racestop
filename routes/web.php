@@ -40,7 +40,7 @@ Route::get('/news/{slug}', [PostsController::class, 'show']);
 Route::middleware('auth', 'role:writer')->group(
     function () {
         // Create New Blog Post
-        Route::get('/news/create', [PostsController::class, 'create']);
+        Route::get('/create', [PostsController::class, 'create']);
 
         // Store New Blog Post
         Route::post('/', [PostsController::class, 'store']);
