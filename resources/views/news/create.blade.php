@@ -50,9 +50,9 @@
                     <div class="mb-12">
                         <label for="">Tags: </label>
                         <select name="category" id="category">
-                            <option value="f1">F1</option>
-                            <option value="f2">F2</option>
-                            <option value="f3">F3</option>
+                            <option value="F1">F1</option>
+                            <option value="F2">F2</option>
+                            <option value="F3">F3</option>
                             <option value="motogp">MotoGP</option>
                             <option value="formulae">Formula E</option>
                             <option value="indycar">Indycar</option>

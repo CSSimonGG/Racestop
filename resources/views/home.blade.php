@@ -44,7 +44,7 @@
                                         src="/images/{{ $posts[1]->image_path }}" alt="img">
                                 </div>
                                 <div class="absolute bottom-0 p-3 text-white font-bold">
-                                    <div class="uppercase text-xl italic pl-1 text-light-red font-extrabold">
+                                    <div class="uppercase text-xl pl-1 text-light-red font-extrabold">
                                         {{ $posts[1]->category }}
                                     </div>
                                     <div class="text-2xl break-words w-[336px] pr-3 line-clamp-2">

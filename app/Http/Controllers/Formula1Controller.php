@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class Formula1Controller extends Controller
@@ -14,7 +15,8 @@ class Formula1Controller extends Controller
     // F1 News
     public function news()
     {
-        return view('f1/news');
+        return view('f1/news')
+            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
     }
     // F1 Calender
     public function calender()
