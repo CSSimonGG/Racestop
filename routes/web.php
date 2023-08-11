@@ -33,6 +33,9 @@ Route::get('/', [PagesController::class, 'index']);
 // News Page
 Route::get('/news', [PostsController::class, 'index']);
 
+// Show Blog Post
+Route::get('/news/{slug}', [PostsController::class, 'show']);
+
 // Blog Posts Editor Authentication
 Route::middleware('auth', 'role:writer')->group(
     function () {
@@ -52,9 +55,6 @@ Route::middleware('auth', 'role:writer')->group(
         Route::delete('/news/{slug}/delete', [PostsController::class, 'destroy']);
     }
 );
-
-// Show Blog Post
-Route::get('/news/{slug}', [PostsController::class, 'show']);
 
 /**
  * Legal and Contact Routes

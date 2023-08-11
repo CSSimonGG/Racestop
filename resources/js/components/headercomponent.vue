@@ -22,7 +22,9 @@ export default {
 </script>
 
 <template>
-    <header class="bg-white h-[3.25rem] 2xsm:h-[7.25rem] block sticky inset-0">
+    <header
+        class="bg-white h-[3.25rem] 2xsm:h-[7.25rem] block sticky inset-0 z-100"
+    >
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
