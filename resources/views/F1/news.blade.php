@@ -25,7 +25,6 @@
                                             {{ $post->title }}
                                         </h2>
                                     </div>
-
                                 </div>
                             </a>
                         </div>

@@ -34,8 +34,8 @@
                             </div>
                         </a>
                     </div>
-                    {{-- Big Post 2 --}}
                     <div class="flex">
+                        {{-- Big Post 2 --}}
                         <div class="h-[280px] w-[336px] bg-night relative post-shadow hover:hover-shadow mr-6">
                             <a href="/news/{{ $posts[1]->slug }}">
                                 <div class="">
@@ -52,8 +52,8 @@
                                 </div>
                             </a>
                         </div>
-                        {{-- small post 1 --}}
                         <div class="space-y-5">
+                            {{-- small post 1 --}}
                             <div
                                 class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
                                 <a href="/news/{{ $posts[2]->slug }}" class="flex">
@@ -113,53 +113,57 @@
                 <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Standings</div>
             </div>
 
-            <div class="w-[660px] ml-5">
-                <h1 class="font-bold text-2xl mb-5">Latest News</h1>
-                <div class=" mb-5 grid xsm:grid-cols-2 gap-4 w-[660px]">
-                    @foreach ($posts as $index => $post)
-                        @if ($index > 4 && $index < 17)
-                            <div class="@if ($post->id % 2 === 0) xsm:float-right @else xsm:float-left @endif">
-                                <a href="/news/{{ $post->slug }}">
-                                    <div
-                                        class="h-[80px] xsm:w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                        <div class="h-[77px] w-[98px] bg-yellow">
-                                            <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}"
-                                                alt="img">
+            <div class="flex">
+                <div class="w-[660px] ml-5 mr-6">
+                    <h1 class="font-bold text-2xl mb-5">Latest News</h1>
+                    <div class="max-3xsm:4xsm:ml-2 mb-12 grid xsm:grid-cols-2 gap-4 xsm:w-[660px]">
+                        @foreach ($posts as $index => $post)
+                            @if ($index > 4 && $index < 17)
+                                <div
+                                    class="@if ($post->id % 2 === 0) xsm:float-right @else xsm:float-left @endif">
+                                    <a href="/news/{{ $post->slug }}">
+                                        <div
+                                            class="h-[80px] max-xsm:3xsm:mr-5 sxm:w-[320px] min-w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                            <div class="h-[77px] w-[98px] bg-yellow">
+                                                <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}"
+                                                    alt="img">
+                                            </div>
+                                            <div class="w-4/6 pr-1">
+                                                <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
+                                                    {{ $post->category }}
+                                                </h2>
+                                                <h2
+                                                    class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                                    {{ $post->title }}
+                                                </h2>
+                                            </div>
+
                                         </div>
-                                        <div class="w-4/6 pr-1">
-                                            <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                                {{ $post->category }}
-                                            </h2>
-                                            <h2
-                                                class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
-                                                {{ $post->title }}
-                                            </h2>
-                                        </div>
-                                        {{-- {{ $post->user->name }} --}}
-                                        {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}
-                                    </div>
-                                </a>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-                <div class="relative">
-                    <a href="/news">
-                        <span class="absolute right-0 bg-night py-3 pl-6 pr-12 rounded">
-                            <span class="text-white text-sm font-semibold uppercase">Read More
+                                    </a>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                    <div class="relative">
+                        <a href="/news">
+                            <span class="absolute right-0 bg-night py-3 pl-6 pr-12 rounded">
+                                <span class="text-white text-sm font-semibold uppercase">Read More
+                                </span>
+                                <svg class="z-40 absolute top-[10px] left-[110px]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" width="30" height="30"
+                                    transform="rotate(-90)">
+                                    <line x1="12" y1="17" x2="16" y2="12" />
+                                    <line x1="12" y1="17" x2="8" y2="12" />
+                                </svg>
                             </span>
-                            <svg class="z-40 absolute top-[10px] left-[110px]" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" width="30" height="30"
-                                transform="rotate(-90)">
-                                <line x1="12" y1="17" x2="16" y2="12" />
-                                <line x1="12" y1="17" x2="8" y2="12" />
-                            </svg>
-                        </span>
-                    </a>
+                        </a>
+                    </div>
+                    <br><br>
+                    <div class="mt-4 mb-12 border border-gray"></div>
                 </div>
-                <br><br>
-                <div class="mt-4 mb-12 border border-gray"></div>
+
+                <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Calendar</div>
             </div>
         </span>
     </div>
