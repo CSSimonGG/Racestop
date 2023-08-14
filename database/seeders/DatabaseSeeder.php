@@ -24,6 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminSeeder::class);
 
         // Posts Factory
-        \App\Models\Post::factory(10)->create();
+        \App\Models\Post::factory(60)->create();
     }
 }

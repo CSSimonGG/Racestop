@@ -25,7 +25,7 @@
                                     alt="img">
                             </div>
                             <div class="absolute bottom-0 pl-5 pb-4 text-white font-bold">
-                                <div class="uppercase text-xl pl-1 text-light-red font-semibold">
+                                <div class="uppercase text-xl text-light-red font-semibold">
                                     {{ $posts[0]->category }}
                                 </div>
                                 <div class="text-2xl break-words w-[600px] line-clamp-2">
@@ -43,7 +43,7 @@
                                         src="/images/{{ $posts[1]->image_path }}" alt="img">
                                 </div>
                                 <div class="absolute bottom-0 p-3 text-white font-bold">
-                                    <div class="uppercase text-xl pl-1 text-light-red font-extrabold">
+                                    <div class="uppercase text-xl text-light-red font-extrabold">
                                         {{ $posts[1]->category }}
                                     </div>
                                     <div class="text-2xl break-words w-[336px] pr-3 line-clamp-2">
@@ -113,36 +113,54 @@
                 <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Standings</div>
             </div>
 
-            <h1 class="font-bold text-2xl ml-5 mb-5">Latest News</h1>
-            <div class="ml-5 mb-12 grid grid-cols-2 gap-4 w-[660px]">
-                @foreach ($posts as $index => $post)
-                    @if ($index > 4 && $index < 16)
-                        <div class="@if ($post->id % 2 === 0) float-right @else float-left @endif">
-                            <a href="/news/{{ $post->slug }}">
-                                <div
-                                    class="h-[80px] w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                    <div class="h-[77px] w-[98px] bg-yellow">
-                                        <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}"
-                                            alt="img">
+            <div class="w-[660px] ml-5">
+                <h1 class="font-bold text-2xl mb-5">Latest News</h1>
+                <div class=" mb-5 grid xsm:grid-cols-2 gap-4 w-[660px]">
+                    @foreach ($posts as $index => $post)
+                        @if ($index > 4 && $index < 17)
+                            <div class="@if ($post->id % 2 === 0) xsm:float-right @else xsm:float-left @endif">
+                                <a href="/news/{{ $post->slug }}">
+                                    <div
+                                        class="h-[80px] xsm:w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                        <div class="h-[77px] w-[98px] bg-yellow">
+                                            <img class="h-[77px] w-[98px]" src="/images/{{ $post->image_path }}"
+                                                alt="img">
+                                        </div>
+                                        <div class="w-4/6 pr-1">
+                                            <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
+                                                {{ $post->category }}
+                                            </h2>
+                                            <h2
+                                                class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                                {{ $post->title }}
+                                            </h2>
+                                        </div>
+                                        {{-- {{ $post->user->name }} --}}
+                                        {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}
                                     </div>
-                                    <div class="w-4/6 pr-1">
-                                        <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                            {{ $post->category }}
-                                        </h2>
-                                        <h2
-                                            class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
-                                            {{ $post->title }}
-                                        </h2>
-                                    </div>
-                                    {{-- {{ $post->user->name }} --}}
-                                    {{-- {{ date('jS M Y', strtotime($post->updated_at)) }} --}}
-                                </div>
-                            </a>
-                        </div>
-                    @endif
-                @endforeach
+                                </a>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+                <div class="relative">
+                    <a href="/news">
+                        <span class="absolute right-0 bg-night py-3 pl-6 pr-12 rounded">
+                            <span class="text-white text-sm font-semibold uppercase">Read More
+                            </span>
+                            <svg class="z-40 absolute top-[10px] left-[110px]" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" width="30" height="30"
+                                transform="rotate(-90)">
+                                <line x1="12" y1="17" x2="16" y2="12" />
+                                <line x1="12" y1="17" x2="8" y2="12" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <br><br>
+                <div class="mt-4 mb-12 border border-gray"></div>
             </div>
-
         </span>
     </div>
 </x-app-layout>

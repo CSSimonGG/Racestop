@@ -19,9 +19,9 @@ class PostFactory extends Factory
         return [
             'slug' => fake()->unique()->slug(),
             'title' => fake()->catchPhrase(),
-            'description' => fake()->paragraph(),
-            'image_path' => 'test',
-            'category' => 'F1',
+            'description' => fake()->paragraph(20),
+            'image_path' => 'test.png',
+            'category' => $this->faker->randomElement(['F1', 'F2', 'F3', 'indycar', 'nascar', 'enduranceracing']),
             'user_id' => 1,
         ];
     }
