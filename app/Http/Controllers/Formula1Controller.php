@@ -16,7 +16,7 @@ class Formula1Controller extends Controller
     public function news()
     {
         return view('f1/news')
-            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
+            ->with('posts', Post::orderBy('id', 'DESC')->get());
     }
     // F1 Calender
     public function calender()

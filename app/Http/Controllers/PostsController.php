@@ -14,7 +14,7 @@ class PostsController extends Controller
     public function index()
     {
         return view('news')
-            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
+            ->with('posts', Post::orderBy('id', 'DESC')->get());
     }
 
     /**

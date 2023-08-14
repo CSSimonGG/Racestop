@@ -3,122 +3,170 @@
         Racestop.net | Formula 1 and Motorsport News
     </x-slot:title>
     <div class="flex justify-center">
-        <span class="bg-white w-[1024px]">
-            @if (Auth::check())
-                @role('writer')
-                    <div class="bg-night h-20 flex justify-center">
-                        <div class="mt-6">
-                            <a href="/create" class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
-                                Create post
-                            </a>
-                        </div>
-                    </div>
-                @endrole
-            @endif
-            <div class="flex my-5">
-                <div class="space-y-5 ml-5 mr-6">
-                    {{-- Big Post 1 --}}
-                    <div class="h-[434px] w-[660px] bg-night relative post-shadow hover:hover-shadow">
-                        <a href="/news/{{ $posts[0]->slug }}">
-                            <div class="">
-                                <img class="h-[434px] w-[660px] opacity-80" src="/images/{{ $posts[0]->image_path }}"
-                                    alt="img">
-                            </div>
-                            <div class="absolute bottom-0 pl-5 pb-4 text-white font-bold">
-                                <div class="uppercase text-xl text-light-red font-semibold">
-                                    {{ $posts[0]->category }}
-                                </div>
-                                <div class="text-2xl break-words w-[600px] line-clamp-2">
-                                    {{ $posts[0]->title }}
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex">
-                        {{-- Big Post 2 --}}
-                        <div class="h-[280px] w-[336px] bg-night relative post-shadow hover:hover-shadow mr-6">
-                            <a href="/news/{{ $posts[1]->slug }}">
+        <span class="bg-white w-[1024px] max-lg:flex max-lg:flex-col max-lg:justify-center">
+            <div class="">
+                <div class="flex my-5">
+                    <div class="space-y-5 ml-5 mr-6">
+                        {{-- Big Post 1 --}}
+                        <div
+                            class="max-w-[660px] max-h-[434px] xsm:h-[434px] xsm:w-[660px] bg-night relative post-shadow hover:hover-shadow">
+                            <a href="/news/{{ $posts[0]->slug }}">
                                 <div class="">
-                                    <img class="h-[280px] w-[336px] opacity-80"
-                                        src="/images/{{ $posts[1]->image_path }}" alt="img">
+                                    <img class="max-w-[660px] max-h-[434px] w-full xsm:h-[434px] xsm:w-[660px] opacity-80"
+                                        src="/images/{{ $posts[0]->image_path }}" alt="img">
                                 </div>
-                                <div class="absolute bottom-0 p-3 text-white font-bold">
-                                    <div class="uppercase text-xl text-light-red font-extrabold">
-                                        {{ $posts[1]->category }}
+                                <div class="absolute bottom-0 pl-5 pb-4 text-white font-bold">
+                                    <div class="uppercase text-xl text-light-red font-semibold">
+                                        {{ $posts[0]->category }}
                                     </div>
-                                    <div class="text-2xl break-words w-[336px] pr-3 line-clamp-2">
-                                        {{ $posts[1]->title }}
+                                    <div class="text-2xl break-words w-[600px] line-clamp-2">
+                                        {{ $posts[0]->title }}
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="space-y-5">
-                            {{-- small post 1 --}}
-                            <div
-                                class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                <a href="/news/{{ $posts[2]->slug }}" class="flex">
+                        <div class="flex">
+                            {{-- Big Post 2 --}}
+                            <div class="h-[280px] w-[336px] bg-night relative post-shadow hover:hover-shadow mr-6">
+                                <a href="/news/{{ $posts[1]->slug }}">
                                     <div class="">
-                                        <img class="h-[77px] w-[98px]" src="/images/{{ $posts[2]->image_path }}"
-                                            alt="img">
+                                        <img class="h-[280px] w-[336px] opacity-80"
+                                            src="/images/{{ $posts[1]->image_path }}" alt="img">
                                     </div>
-                                    <div class="w-[200px] pl-3 pr-1">
-                                        <div class="uppercase font-semibold text-light-red pt-1">
-                                            {{ $posts[2]->category }}
+                                    <div class="absolute bottom-0 p-3 text-white font-bold">
+                                        <div class="uppercase text-xl text-light-red font-extrabold">
+                                            {{ $posts[1]->category }}
                                         </div>
-                                        <div class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
-                                            {{ $posts[2]->title }}
+                                        <div class="text-2xl break-words w-[336px] pr-3 line-clamp-2">
+                                            {{ $posts[1]->title }}
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            {{-- small post 2 --}}
-                            <div
-                                class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                <a href="/news/{{ $posts[3]->slug }}" class="flex">
-                                    <div class="">
-                                        <img class="h-[77px] w-[98px]" src="/images/{{ $posts[3]->image_path }}"
-                                            alt="img">
-                                    </div>
-                                    <div class="w-[200px] pl-3 pr-1">
-                                        <div class="uppercase font-semibold text-light-red pt-1">
-                                            {{ $posts[3]->category }}
+                            <div class="space-y-5 max-xsm:hidden">
+                                {{-- small post 1 --}}
+                                <div
+                                    class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                    <a href="/news/{{ $posts[2]->slug }}" class="flex">
+                                        <div class="">
+                                            <img class="h-[77px] w-[98px]" src="/images/{{ $posts[2]->image_path }}"
+                                                alt="img">
                                         </div>
-                                        <div class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
-                                            {{ $posts[3]->title }}
+                                        <div class="w-[200px] pl-3 pr-1">
+                                            <div class="uppercase font-semibold text-light-red pt-1">
+                                                {{ $posts[2]->category }}
+                                            </div>
+                                            <div
+                                                class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                                {{ $posts[2]->title }}
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                            {{-- small post 3 --}}
-                            <div
-                                class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
-                                <a href="/news/{{ $posts[4]->slug }}" class="flex">
-                                    <div class="h-[77px] w-[98px] bg-night">
-                                        <img class="h-[77px] w-[98px]" src="/images/{{ $posts[4]->image_path }}"
-                                            alt="img">
-                                    </div>
-                                    <div class="w-[200px] pl-3 pr-1">
-                                        <div class="uppercase font-semibold text-light-red pt-1">
-                                            {{ $posts[4]->category }}
+                                    </a>
+                                </div>
+                                {{-- small post 2 --}}
+                                <div
+                                    class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                    <a href="/news/{{ $posts[3]->slug }}" class="flex">
+                                        <div class="">
+                                            <img class="h-[77px] w-[98px]" src="/images/{{ $posts[3]->image_path }}"
+                                                alt="img">
                                         </div>
-                                        <div class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
-                                            {{ $posts[4]->title }}
+                                        <div class="w-[200px] pl-3 pr-1">
+                                            <div class="uppercase font-semibold text-light-red pt-1">
+                                                {{ $posts[3]->category }}
+                                            </div>
+                                            <div
+                                                class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                                {{ $posts[3]->title }}
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                                {{-- small post 3 --}}
+                                <div
+                                    class="h-[80px] w-[300px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                    <a href="/news/{{ $posts[4]->slug }}" class="flex">
+                                        <div class="h-[77px] w-[98px] bg-night">
+                                            <img class="h-[77px] w-[98px]" src="/images/{{ $posts[4]->image_path }}"
+                                                alt="img">
+                                        </div>
+                                        <div class="w-[200px] pl-3 pr-1">
+                                            <div class="uppercase font-semibold text-light-red pt-1">
+                                                {{ $posts[4]->category }}
+                                            </div>
+                                            <div
+                                                class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                                {{ $posts[4]->title }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Standings</div>
                 </div>
-                <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5">F1 Standings</div>
             </div>
-
             <div class="flex">
                 <div class="w-[660px] ml-5 mr-6">
                     <h1 class="font-bold text-2xl mb-5">Latest News</h1>
                     <div class="max-3xsm:4xsm:ml-2 mb-12 grid xsm:grid-cols-2 gap-4 xsm:w-[660px]">
+                        <a href="/news/{{ $posts[2]->slug }}">
+                            <div
+                                class="h-[80px] max-xsm:3xsm:mr-5 sxm:w-[320px] min-w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                <div class="h-[77px] w-[98px] bg-yellow">
+                                    <img class="h-[77px] w-[98px]" src="/images/{{ $posts[3]->image_path }}"
+                                        alt="img">
+                                </div>
+                                <div class="w-4/6 pr-1">
+                                    <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
+                                        {{ $posts[2]->category }}
+                                    </h2>
+                                    <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                        {{ $posts[2]->title }}
+                                    </h2>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/news/{{ $posts[3]->slug }}">
+                            <div
+                                class="h-[80px] max-xsm:3xsm:mr-5 sxm:w-[320px] min-w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                <div class="h-[77px] w-[98px] bg-yellow">
+                                    <img class="h-[77px] w-[98px]" src="/images/{{ $posts[3]->image_path }}"
+                                        alt="img">
+                                </div>
+                                <div class="w-4/6 pr-1">
+                                    <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
+                                        {{ $posts[3]->category }}
+                                    </h2>
+                                    <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                        {{ $posts[3]->title }}
+                                    </h2>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/news/{{ $posts[4]->slug }}">
+                            <div
+                                class="h-[80px] max-xsm:3xsm:mr-5 sxm:w-[320px] min-w-[320px] border-2 border-platinum flex post-shadow hover:hover-shadow">
+                                <div class="h-[77px] w-[98px] bg-yellow">
+                                    <img class="h-[77px] w-[98px]" src="/images/{{ $posts[4]->image_path }}"
+                                        alt="img">
+                                </div>
+                                <div class="w-4/6 pr-1">
+                                    <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
+                                        {{ $posts[4]->category }}
+                                    </h2>
+                                    <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
+                                        {{ $posts[4]->title }}
+                                    </h2>
+                                </div>
+
+                            </div>
+                        </a>
                         @foreach ($posts as $index => $post)
-                            @if ($index > 4 && $index < 17)
+                            @if ($index > 4 && $index < 14)
                                 <div
                                     class="@if ($post->id % 2 === 0) xsm:float-right @else xsm:float-left @endif">
                                     <a href="/news/{{ $post->slug }}">
