@@ -313,29 +313,37 @@ export default {
                         <div
                             class="dropdown-content hidden group-hover:block hover:block absolute bg-night text-white px-4 py-5 border-t-20 border-yellow"
                         >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >MOTOGP</a
+                            <a
+                                href="/motogp"
+                                class="block pb-4 hover:text-yellow"
+                                >MotoGP</a
                             >
                             <a href="/f1" class="block pb-4 hover:text-yellow"
-                                >F1</a
+                                >Formula 1</a
                             >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >F2</a
+                            <a href="/f2" class="block pb-4 hover:text-yellow"
+                                >Formula 2</a
                             >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >F3</a
+                            <a href="/f3" class="block pb-4 hover:text-yellow"
+                                >Formula 3</a
                             >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >FORMULA E</a
+                            <a href="/fe" class="block pb-4 hover:text-yellow"
+                                >Formula E</a
                             >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >INDYCAR</a
+                            <a
+                                href="/indycar"
+                                class="block pb-4 hover:text-yellow"
+                                >Indycar</a
                             >
-                            <a href="" class="block pb-4 hover:text-yellow"
-                                >NASCAR</a
+                            <a
+                                href="/nascar"
+                                class="block pb-4 hover:text-yellow"
+                                >Nascar</a
                             >
-                            <a href="" class="block hover:text-yellow"
-                                >Le Mans</a
+                            <a
+                                href="/endurance-racing"
+                                class="block hover:text-yellow"
+                                >Endurance<br />Racing</a
                             >
                         </div>
                     </li>
@@ -407,6 +415,9 @@ export default {
                 >
                     <li class="move-right-on-hover">
                         <a href="/championships">Championships</a>
+                    </li>
+                    <li class="move-right-on-hover">
+                        <a href="/motogp">MotoGP</a>
                     </li>
                     <li class="move-right-on-hover">
                         <a href="/f2">Formula 2</a>

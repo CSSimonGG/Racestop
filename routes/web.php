@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutusController;
+use App\Http\Controllers\ChampionshipsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Formula1Controller;
 use App\Http\Controllers\PagesController;
@@ -101,6 +102,35 @@ Route::get('/f1/drivers', [Formula1Controller::class, 'drivers']);
 
 // F1 Home
 Route::get('/f1/live', [Formula1Controller::class, 'live']);
+
+/**
+ * Championships Routes
+ */
+
+// Championships
+Route::get('/championships', [ChampionshipsController::class, 'championships']);
+
+
+// MotoGP 
+Route::get('/motogp', [ChampionshipsController::class, 'motogp']);
+
+// F2
+Route::get('/f2', [ChampionshipsController::class, 'f2']);
+
+// F3
+Route::get('/f3', [ChampionshipsController::class, 'f3']);
+
+// Formula E
+Route::get('/fe', [ChampionshipsController::class, 'fe']);
+
+// Indycar
+Route::get('/indycar', [ChampionshipsController::class, 'indycar']);
+
+// Nascar
+Route::get('/nascar', [ChampionshipsController::class, 'nascar']);
+
+// Endurance Racing
+Route::get('/endurance-racing', [ChampionshipsController::class, 'enduranceracing']);
 
 /**
  * Policy Pages
