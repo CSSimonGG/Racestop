@@ -6,6 +6,7 @@ use App\Http\Controllers\PostsController;
 use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\F1TeamsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Formula1Controller;
 use App\Http\Controllers\F1DriversController;
@@ -95,9 +96,6 @@ Route::get('/f1/results', [Formula1Controller::class, 'results']);
 // F1 Standings
 Route::get('/f1/standings', [Formula1Controller::class, 'standings']);
 
-// F1 Teams
-Route::get('/f1/teams', [Formula1Controller::class, 'teams']);
-
 // F1 Home
 Route::get('/f1/live', [Formula1Controller::class, 'live']);
 
@@ -167,6 +165,43 @@ Route::get('/f1/drivers/yuki-tsunoda', [F1DriversController::class, 'yukitsunoda
 
 // Daniel Ricciardo
 Route::get('/f1/drivers/daniel-ricciardo', [F1DriversController::class, 'danielricciardo']);
+
+/**
+ * F1 Teams Routes
+ */
+
+// F1 Teams
+Route::get('/f1/teams', [F1TeamsController::class, 'teams']);
+
+// Red Bull Racing
+Route::get('/f1/teams/red-bull-racing', [F1TeamsController::class, 'redbullracing']);
+
+// Ferrari
+Route::get('/f1/teams/ferrari', [F1TeamsController::class, 'ferrari']);
+
+// Mercedes
+Route::get('/f1/teams/mercedes', [F1TeamsController::class, 'mercedes']);
+
+// Aston martin
+Route::get('/f1/teams/aston-martin', [F1TeamsController::class, 'astonmartin']);
+
+// Mclaren
+Route::get('/f1/teams/mclaren', [F1TeamsController::class, 'mclaren']);
+
+// Alpine
+Route::get('/f1/teams/alpine', [F1TeamsController::class, 'alpine']);
+
+// Alfa Romeo
+Route::get('/f1/teams/alfa-romeo', [F1TeamsController::class, 'alfaromeo']);
+
+// Haas
+Route::get('/f1/teams/haas', [F1TeamsController::class, 'haas']);
+
+// Williams
+Route::get('/f1/teams/williams', [F1TeamsController::class, 'williams']);
+
+// Alpha Tauri
+Route::get('/f1/teams/alpha-tauri', [F1TeamsController::class, 'alphatauri']);
 
 /**
  * Championships Routes

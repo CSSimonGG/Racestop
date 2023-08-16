@@ -190,62 +190,62 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/f1/drivers/esteban-ocon">
+                        <a href="/f1/drivers/fernando-alonso">
                             <div class="w-[322px] mb-5 mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative">
                                     <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H200L98 200H0V0Z" fill="#2293d0" />
+                                        <path d="M0 0H200L98 200H0V0Z" fill="#358c75" />
                                     </svg>
 
-                                    <img src="/images/drivers/esteban-ocon.png" alt="Esteban Ocon"
-                                        class="w-[220px] h-[220px] absolute -top-5 -left-3 z-50">
-                                    <img src="/images/teams/alpine.png" alt="Alpine"
-                                        class="h-[75px] absolute top-5 right-[4px]">
-                                    <img src="/images/flags/fra-flag.png" alt="FRA"
+                                    <img src="/images/drivers/fernando-alonso.png" alt="Fernando Alonso"
+                                        class="w-[220px] h-[220px] absolute -top-5 -left-3">
+                                    <img src="/images/teams/astonmartin.png" alt="Aston Martin"
+                                        class="w-[172px] absolute top-11 right-[8px]">
+                                    <img src="/images/flags/esp-flag.png" alt="ESP"
                                         class="w-[80px] absolute right-5 bottom-5">
                                 </div>
                                 <div class="h-[50px] w-[322px] border relative">
                                     <span class="absolute left-2">
                                         <h1 class="font-bold text-night">
-                                            Esteban Ocon
+                                            Fernando Alonso
                                         </h1>
                                         <h2>
-                                            Alpine
+                                            Aston Martin
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">
-                                        31
+                                        14
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="/f1/drivers/pierre-gasly">
+                        <a href="/f1/drivers/lance-stroll">
                             <div class="w-[322px] mb-5 mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative">
                                     <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H200L98 200H0V0Z" fill="#2293d0" />
+                                        <path d="M0 0H200L98 200H0V0Z" fill="#358c75" />
                                     </svg>
 
-                                    <img src="/images/drivers/pierre-gasly.png" alt="Pierre Gasly"
-                                        class="w-[220px] h-[220px] absolute -top-5 -left-3 z-50">
-                                    <img src="/images/teams/alpine.png" alt="Alpine"
-                                        class="h-[75px] absolute top-5 right-[4px]">
-                                    <img src="/images/flags/fra-flag.png" alt="FRA"
+                                    <img src="/images/drivers/lance-stroll.png" alt="Lance Stroll"
+                                        class="w-[220px] h-[220px] absolute -top-5 -left-3">
+                                    <img src="/images/teams/astonmartin.png" alt="Aston Martin"
+                                        class="w-[172px] absolute top-11 right-[8px]">
+                                    <img src="/images/flags/can-flag.png" alt="CAN"
                                         class="w-[80px] absolute right-5 bottom-5">
                                 </div>
                                 <div class="h-[50px] w-[322px] border relative">
                                     <span class="absolute left-2">
                                         <h1 class="font-bold text-night">
-                                            Pierre Gasly
+                                            Lance Stroll
                                         </h1>
                                         <h2>
-                                            Alpine
+                                            Aston Martin
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">
-                                        10
+                                        18
                                     </div>
                                 </div>
                             </div>
@@ -310,6 +310,66 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="/f1/drivers/esteban-ocon">
+                            <div class="w-[322px] mb-5 mr-5">
+                                <div class="h-[200px] w-[322px] bg-night relative">
+                                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H200L98 200H0V0Z" fill="#2293d0" />
+                                    </svg>
+
+                                    <img src="/images/drivers/esteban-ocon.png" alt="Esteban Ocon"
+                                        class="w-[220px] h-[220px] absolute -top-5 -left-3 z-50">
+                                    <img src="/images/teams/alpine.png" alt="Alpine"
+                                        class="h-[75px] absolute top-5 right-[4px]">
+                                    <img src="/images/flags/fra-flag.png" alt="FRA"
+                                        class="w-[80px] absolute right-5 bottom-5">
+                                </div>
+                                <div class="h-[50px] w-[322px] border relative">
+                                    <span class="absolute left-2">
+                                        <h1 class="font-bold text-night">
+                                            Esteban Ocon
+                                        </h1>
+                                        <h2>
+                                            Alpine
+                                        </h2>
+                                    </span>
+                                    <div class="absolute top-2 right-2 text-2xl font-extrabold">
+                                        31
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/f1/drivers/pierre-gasly">
+                            <div class="w-[322px] mb-5 mr-5">
+                                <div class="h-[200px] w-[322px] bg-night relative">
+                                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H200L98 200H0V0Z" fill="#2293d0" />
+                                    </svg>
+
+                                    <img src="/images/drivers/pierre-gasly.png" alt="Pierre Gasly"
+                                        class="w-[220px] h-[220px] absolute -top-5 -left-3 z-50">
+                                    <img src="/images/teams/alpine.png" alt="Alpine"
+                                        class="h-[75px] absolute top-5 right-[4px]">
+                                    <img src="/images/flags/fra-flag.png" alt="FRA"
+                                        class="w-[80px] absolute right-5 bottom-5">
+                                </div>
+                                <div class="h-[50px] w-[322px] border relative">
+                                    <span class="absolute left-2">
+                                        <h1 class="font-bold text-night">
+                                            Pierre Gasly
+                                        </h1>
+                                        <h2>
+                                            Alpine
+                                        </h2>
+                                    </span>
+                                    <div class="absolute top-2 right-2 text-2xl font-extrabold">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                         <a href="/f1/drivers/valtteri-bottas">
                             <div class="w-[322px] mb-5 mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative">
@@ -370,62 +430,32 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/f1/drivers/fernando-alonso">
+                        <a href="/f1/drivers/nico-hulkenberg">
                             <div class="w-[322px] mb-5 mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative">
                                     <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H200L98 200H0V0Z" fill="#358c75" />
+                                        <path d="M0 0H200L98 200H0V0Z" fill="#b6babd" />
                                     </svg>
 
-                                    <img src="/images/drivers/fernando-alonso.png" alt="Fernando Alonso"
+                                    <img src="/images/drivers/nico-hulkenberg.png" alt="Nico Hulkenberg"
                                         class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/astonmartin.png" alt="Aston Martin"
-                                        class="w-[172px] absolute top-11 right-[8px]">
-                                    <img src="/images/flags/esp-flag.png" alt="ESP"
-                                        class="w-[80px] absolute right-5 bottom-5">
+                                    <img src="/images/teams/haas.png" alt="Haas"
+                                        class="h-[105px] absolute top-2.5 right-[8px]">
+                                    <img src="/images/flags/deu-flag.png" alt="DEU"
+                                        class="w-[80px] absolute right-5 bottom-5 border border-dark-gray">
                                 </div>
                                 <div class="h-[50px] w-[322px] border relative">
                                     <span class="absolute left-2">
                                         <h1 class="font-bold text-night">
-                                            Fernando Alonso
+                                            Nico Hulkenberg
                                         </h1>
                                         <h2>
-                                            Aston Martin
+                                            Haas
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">
-                                        14
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/f1/drivers/lance-stroll">
-                            <div class="w-[322px] mb-5 mr-5">
-                                <div class="h-[200px] w-[322px] bg-night relative">
-                                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H200L98 200H0V0Z" fill="#358c75" />
-                                    </svg>
-
-                                    <img src="/images/drivers/lance-stroll.png" alt="Lance Stroll"
-                                        class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/astonmartin.png" alt="Aston Martin"
-                                        class="w-[172px] absolute top-11 right-[8px]">
-                                    <img src="/images/flags/can-flag.png" alt="CAN"
-                                        class="w-[80px] absolute right-5 bottom-5">
-                                </div>
-                                <div class="h-[50px] w-[322px] border relative">
-                                    <span class="absolute left-2">
-                                        <h1 class="font-bold text-night">
-                                            Lance Stroll
-                                        </h1>
-                                        <h2>
-                                            Aston Martin
-                                        </h2>
-                                    </span>
-                                    <div class="absolute top-2 right-2 text-2xl font-extrabold">
-                                        18
+                                        27
                                     </div>
                                 </div>
                             </div>
@@ -456,36 +486,6 @@
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">
                                         20
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/f1/drivers/nico-hulkenberg">
-                            <div class="w-[322px] mb-5 mr-5">
-                                <div class="h-[200px] w-[322px] bg-night relative">
-                                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H200L98 200H0V0Z" fill="#b6babd" />
-                                    </svg>
-
-                                    <img src="/images/drivers/nico-hulkenberg.png" alt="Nico Hulkenberg"
-                                        class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/haas.png" alt="Haas"
-                                        class="h-[105px] absolute top-2.5 right-[8px]">
-                                    <img src="/images/flags/deu-flag.png" alt="DEU"
-                                        class="w-[80px] absolute right-5 bottom-5 border border-dark-gray">
-                                </div>
-                                <div class="h-[50px] w-[322px] border relative">
-                                    <span class="absolute left-2">
-                                        <h1 class="font-bold text-night">
-                                            Nico Hulkenberg
-                                        </h1>
-                                        <h2>
-                                            Haas
-                                        </h2>
-                                    </span>
-                                    <div class="absolute top-2 right-2 text-2xl font-extrabold">
-                                        27
                                     </div>
                                 </div>
                             </div>
