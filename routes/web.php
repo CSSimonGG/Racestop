@@ -1,14 +1,15 @@
 <?php
 
-use App\Http\Controllers\AboutusController;
-use App\Http\Controllers\ChampionshipsController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\Formula1Controller;
-use App\Http\Controllers\PagesController;
-use App\Http\Controllers\PolicyController;
-use App\Http\Controllers\PostsController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PolicyController;
+use App\Http\Controllers\AboutusController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Formula1Controller;
+use App\Http\Controllers\F1DriversController;
+use App\Http\Controllers\ChampionshipsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,11 +98,75 @@ Route::get('/f1/standings', [Formula1Controller::class, 'standings']);
 // F1 Teams
 Route::get('/f1/teams', [Formula1Controller::class, 'teams']);
 
-// F1 drivers
-Route::get('/f1/drivers', [Formula1Controller::class, 'drivers']);
-
 // F1 Home
 Route::get('/f1/live', [Formula1Controller::class, 'live']);
+
+/**
+ * F1 Drivers Routes
+ */
+
+// F1 Drivers
+Route::get('/f1/drivers', [F1DriversController::class, 'drivers']);
+
+// Max Verstappen 
+Route::get('/f1/drivers/max-verstappen', [F1DriversController::class, 'maxverstappen']);
+
+// Sergio Perez
+Route::get('/f1/drivers/sergio-perez', [F1DriversController::class, 'sergioperez']);
+
+// Charles Leclerc
+Route::get('/f1/drivers/charles-leclerc', [F1DriversController::class, 'charlesleclerc']);
+
+// Carlos Sainz
+Route::get('/f1/drivers/carlos-sainz', [F1DriversController::class, 'carlossainz']);
+
+// George Russel
+Route::get('/f1/drivers/george-russel', [F1DriversController::class, 'georgerussel']);
+
+// Lewis Hamilton
+Route::get('/f1/drivers/lewis-hamilton', [F1DriversController::class, 'lewishamilton']);
+
+// Esteban Ocon
+Route::get('/f1/drivers/esteban-ocon', [F1DriversController::class, 'estebanocon']);
+
+// Pierre Gasly
+Route::get('/f1/drivers/pierre-gasly', [F1DriversController::class, 'pierregasly']);
+
+// Lando Norris
+Route::get('/f1/drivers/lando-norris', [F1DriversController::class, 'landonorris']);
+
+// Oscar Piastri
+Route::get('/f1/drivers/oscar-piastri', [F1DriversController::class, 'oscarpiastri']);
+
+// Valtteri Bottas
+Route::get('/f1/drivers/valtteri-bottas', [F1DriversController::class, 'valtteribottas']);
+
+// Guanyu Zhou
+Route::get('/f1/drivers/guanyu-zhou', [F1DriversController::class, 'guanyuzhou']);
+
+// Fernando Alonso
+Route::get('/f1/drivers/fernando-alonso', [F1DriversController::class, 'fernandoalonso']);
+
+// Lance Stroll
+Route::get('/f1/drivers/lance-stroll', [F1DriversController::class, 'lancestroll']);
+
+// Kevin Magnussen
+Route::get('/f1/drivers/kevin-magnussen', [F1DriversController::class, 'kevinmagnussen']);
+
+// Nico Hulkenberg
+Route::get('/f1/drivers/nico-hulkenberg', [F1DriversController::class, 'nicohulkenberg']);
+
+// Alexander Albon
+Route::get('/f1/drivers/alexander-albon', [F1DriversController::class, 'alexanderalbon']);
+
+// Logan Sargeant
+Route::get('/f1/drivers/logan-sargeant', [F1DriversController::class, 'logansargeant']);
+
+// Yuki Tsunoda
+Route::get('/f1/drivers/yuki-tsunoda', [F1DriversController::class, 'yukitsunoda']);
+
+// Daniel Ricciardo
+Route::get('/f1/drivers/daniel-ricciardo', [F1DriversController::class, 'danielricciardo']);
 
 /**
  * Championships Routes

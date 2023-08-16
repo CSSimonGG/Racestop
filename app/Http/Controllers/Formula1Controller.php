@@ -43,11 +43,6 @@ class Formula1Controller extends Controller
     {
         return view('f1/teams');
     }
-    // F1 Drivers
-    public function drivers()
-    {
-        return view('f1/drivers');
-    }
     // F1 Live
     public function live()
     {
