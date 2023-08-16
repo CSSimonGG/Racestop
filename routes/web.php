@@ -121,7 +121,7 @@ Route::get('/f1/drivers/charles-leclerc', [F1DriversController::class, 'charlesl
 Route::get('/f1/drivers/carlos-sainz', [F1DriversController::class, 'carlossainz']);
 
 // George Russel
-Route::get('/f1/drivers/george-russel', [F1DriversController::class, 'georgerussel']);
+Route::get('/f1/drivers/george-russel', [F1DriversController::class, 'georgerussell']);
 
 // Lewis Hamilton
 Route::get('/f1/drivers/lewis-hamilton', [F1DriversController::class, 'lewishamilton']);
