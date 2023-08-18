@@ -41,14 +41,17 @@ export default {
             green: "#33cc99",
         },
         screens: {
-            "5xsm": "280px",
+            "6xsm": "280px",
             // => @media (min-width: 280px) { ... }
 
-            "4xsm": "320px",
+            "5xsm": "320px",
             // => @media (min-width: 320px) { ... }
 
-            "3xsm": "425px",
+            "4xsm": "425px",
             // => @media (min-width: 425px) { ... }
+
+            "3xsm": "550px",
+            // => @media (min-width: 550px) { ... }
 
             "2xsm": "640px",
             // => @media (min-width: 640px) { ... }

@@ -4,12 +4,17 @@
     <footer class="bg-night pt-8 pb-4 bottom-0 w-full">
         <div class="mx-4">
             <div
-                class="text-white 2xsm:flex 2xsm:justify-center 2xsm:space-x-28 3xsm:max-2xsm:grid 3xsm:max-2xsm:grid-cols-2 max-2xsm:ml-8 max-3xsm:ml-4"
+                class="text-white 2xsm:flex 2xsm:justify-center 2xsm:space-x-28 4xsm:max-2xsm:grid 4xsm:max-2xsm:grid-cols-2 max-2xsm:ml-8 max-4xsm:ml-4"
             >
                 <ul class="">
-                    <li class="font-extrabold mb-2">Formula 1</li>
+                    <li class="font-extrabold mb-2">
+                        <a href="/f1">Formula 1</a>
+                    </li>
                     <li class="hover:text-silver">
                         <a href="/f1/news">F1 News</a>
+                    </li>
+                    <li class="hover:text-silver">
+                        <a href="/f1/news">F1 Calendar</a>
                     </li>
                     <li class="hover:text-silver">
                         <a href="/f1/standings">F1 Standings</a>
@@ -24,7 +29,7 @@
                         <a href="/f1/drivers">F1 Drivers</a>
                     </li>
                 </ul>
-                <ul class="max-3xsm:mt-8">
+                <ul class="max-4xsm:mt-8">
                     <li class="font-extrabold mb-2">Racestop.net</li>
                     <li class="hover:text-silver">
                         <a href="/privacy-policy">Privacy Policy</a>

@@ -490,7 +490,6 @@
                                 </div>
                             </div>
                         </a>
-                        </a>
                         <a href="/f1/drivers/alexander-albon">
                             <div class="w-[322px] mb-5 mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative">
@@ -611,7 +610,6 @@
                                 </div>
                             </div>
                         </a>
-
                     </div>
                 </div>
                 <div class="max-lg:hidden h-[734px] w-[300px] bg-platinum mr-5 mt-[72px]">F1 Standings</div>

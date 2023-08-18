@@ -10,7 +10,8 @@ class Formula1Controller extends Controller
     // F1 Home
     public function index()
     {
-        return view('f1/home');
+        return redirect('/f1/news');
+        // return view('f1/home');
     }
 
     // F1 News

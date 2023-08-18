@@ -7,10 +7,9 @@
         <span class="bg-white w-[1024px] max-lg:flex max-lg:flex-col max-lg:justify-center">
             <div class="flex">
                 <div class="lg:w-[68.75%]">
-                    <h1 class="m-5 font-bold text-2xl">F1 Teams</h1>
-                    <div class="my-5 ml-5 flex flex-wrap">
+                    <div class="my-5 4xsm:ml-5 flex flex-wrap">
                         <a href="/f1/teams/red-bull-racing">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -43,7 +42,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/ferrari">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -76,7 +75,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/mercedes">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -109,7 +108,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/aston-martin">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -142,7 +141,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/mclaren">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -175,7 +174,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/alpine">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -208,7 +207,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/alfa-romeo">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -242,7 +241,7 @@
                         </a>
 
                         <a href="/f1/teams/haas">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -275,7 +274,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/williams">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
@@ -308,7 +307,7 @@
                             </div>
                         </a>
                         <a href="/f1/teams/alpha-tauri">
-                            <div class="w-[322px] mb-5 mr-5">
+                            <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
                                         viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">

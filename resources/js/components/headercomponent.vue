@@ -28,17 +28,17 @@ export default {
         <div
             class="z-20 absolute inset-0 max-xl:w-9/12 xl:w-8/12 3xl:w-64p 4xl:w-3/5 5xl:w-7/12 6xl:w-56p 7xl:w-54p bg-white h-[3.25rem]"
         ></div>
-        <div class="5xsm:bg-dark-red h-[3.25rem] relative">
+        <div class="6xsm:bg-dark-red h-[3.25rem] relative">
             <div class="max-w-5xl mx-auto flex items-center justify-between">
                 <div class="z-100 bg-white mx-4 w-8/12">
                     <span
-                        class="text-light-red text-xl 3xsm:text-2xl 2xsm:text-3xl font-extrabold"
+                        class="text-light-red text-xl 4xsm:text-2xl 2xsm:text-3xl font-extrabold"
                     >
                         <a href="/"> RACESTOP </a>
                     </span>
                 </div>
                 <div
-                    class="z-30 bg-light-red max-5xsm:mr-0 max-2xsm:mr-3 lg:w-2/12 h-[3.25rem] 5xsm:clip-polygon"
+                    class="z-30 bg-light-red max-6xsm:mr-0 max-2xsm:mr-3 lg:w-2/12 h-[3.25rem] 6xsm:clip-polygon"
                 >
                     <ul
                         class="max-2xsm:hidden flex place-items-center my-4 ml-10 pr-8"
@@ -239,11 +239,11 @@ export default {
                     </span>
                 </div>
                 <div
-                    class="z-40 max-4xsm:hidden bg-dark-red w-2/12 h-[3.25rem]"
+                    class="z-40 max-5xsm:hidden bg-dark-red w-2/12 h-[3.25rem]"
                 >
                     <!-- Not Loged In- -->
                     <span
-                        class="flex max-3xsm:items-center max-3xsm:justify-center my-3"
+                        class="flex max-4xsm:items-center max-4xsm:justify-center my-3"
                     >
                         <a href="/profile" class="pr-2"
                             ><img
