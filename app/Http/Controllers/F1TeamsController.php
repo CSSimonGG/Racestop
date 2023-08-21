@@ -36,7 +36,7 @@ class F1TeamsController extends Controller
         return view('f1/teams/aston-martin');
     }
 
-    // Mclaren
+    // McLaren
     public function mclaren()
     {
         return view('f1/teams/mclaren');

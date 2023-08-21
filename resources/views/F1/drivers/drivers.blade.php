@@ -260,7 +260,7 @@
 
                                     <img src="/images/drivers/lando-norris.png" alt="Lando Norris"
                                         class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/mclaren.png" alt="Mclaren"
+                                    <img src="/images/teams/mclaren.png" alt="McLaren"
                                         class="h-[75px] absolute top-5 right-[8px]">
                                     <img src="/images/flags/gbr-flag.png" alt="GBR"
                                         class="w-[80px] absolute right-5 bottom-5">
@@ -290,7 +290,7 @@
 
                                     <img src="/images/drivers/oscar-piastri.png" alt="Oscar Piastri"
                                         class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/mclaren.png" alt="Mclaren"
+                                    <img src="/images/teams/mclaren.png" alt="McLaren"
                                         class="h-[75px] absolute top-5 right-[8px]">
                                     <img src="/images/flags/aus-flag.png" alt="AUS"
                                         class="w-[80px] absolute right-5 bottom-5">
@@ -301,7 +301,7 @@
                                             Oscar Piastri
                                         </h1>
                                         <h2>
-                                            Mclaren
+                                            McLaren
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">

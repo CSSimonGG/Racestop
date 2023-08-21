@@ -185,7 +185,7 @@ Route::get('/f1/teams/mercedes', [F1TeamsController::class, 'mercedes']);
 // Aston martin
 Route::get('/f1/teams/aston-martin', [F1TeamsController::class, 'astonmartin']);
 
-// Mclaren
+// McLaren
 Route::get('/f1/teams/mclaren', [F1TeamsController::class, 'mclaren']);
 
 // Alpine

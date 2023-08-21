@@ -7,6 +7,7 @@
         <span class="bg-white w-[1024px] max-lg:flex max-lg:flex-col max-lg:justify-center">
             <div class="flex">
                 <div class="lg:w-[68.75%]">
+                    <h1 class="m-5 font-bold text-2xl">F1 Teams</h1>
                     <div class="my-5 4xsm:ml-5 flex flex-wrap">
                         <a href="/f1/teams/red-bull-racing">
                             <div class="w-[322px] mb-5 2xsm:mr-5">
@@ -151,7 +152,7 @@
                                         viewBox="0 0 64 200" fill="none" class="absolute right-0 top-0">
                                         <path d="M64 200H-4.76837e-07L64 0L64 100L64 200Z" fill="#f58020" />
                                     </svg>
-                                    <img src="/images/teams/mclaren.png" alt="Mclaren"
+                                    <img src="/images/teams/mclaren.png" alt="McLaren"
                                         class="h-[85px] absolute top-5">
                                     <img src="/images/drivers/lando-norris.png" alt="Lando Norris"
                                         class="w-[160px] h-[160px] absolute bottom-0 -left-[15px]">
@@ -161,7 +162,7 @@
                                 <div class="h-[50px]  w-[322px] border relative">
                                     <span class="absolute left-2">
                                         <h1 class="font-bold text-night">
-                                            Mclaren
+                                            McLaren
                                         </h1>
                                         <h2>
                                             Lando Norris & Oscar Piastri
