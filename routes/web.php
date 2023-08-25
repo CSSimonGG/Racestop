@@ -200,8 +200,8 @@ Route::get('/f1/teams/haas', [F1TeamsController::class, 'haas']);
 // Williams
 Route::get('/f1/teams/williams', [F1TeamsController::class, 'williams']);
 
-// Alpha Tauri
-Route::get('/f1/teams/alpha-tauri', [F1TeamsController::class, 'alphatauri']);
+// AlphaTauri
+Route::get('/f1/teams/alphatauri', [F1TeamsController::class, 'alphatauri']);
 
 /**
  * Championships Routes

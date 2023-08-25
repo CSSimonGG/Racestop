@@ -20,7 +20,7 @@
                                         </svg>
 
                                         <img src="/images/drivers/lewis-hamilton.png" alt="Lewis Hamilton"
-                                            class="max-5xsm:w-[250px] max-4xsm:5xsm:w-[300px] 4xsm:w-[320px] 4xsm:h-[320px] absolute bottom-0 -left-3">
+                                            class="max-5xsm:w-[250px] max-4xsm:5xsm:w-[300px] 4xsm:w-[320px] 4xsm:h-[320px] absolute bottom-0">
                                         <img src="/images/teams/mercedes.png" alt="Mercedes"
                                             class="max-3xsm:hidden h-[140px] absolute top-4 right-[10px]">
                                         <img src="/images/flags/gbr-flag.png" alt="GBR"

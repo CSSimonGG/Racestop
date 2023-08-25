@@ -16,14 +16,14 @@
                                         <svg width="300" height="300" viewBox="0 0 200 200" fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
                                             class="absolute left-0 top-0 max-4xsm:h-[150px] 4xsm:h-[300px]">
-                                            <path d="M0 0H200L98 200H0V0Z" fill="#3671c6" />
+                                            <path d="M0 0H200L98 200H0V0Z" fill="#b6babd" />
                                         </svg>
 
-                                        <img src="/images/drivers/max-verstappen.png" alt="Max Verstappen"
+                                        <img src="/images/drivers/kevin-magnussen.png" alt="Kevin Magnussen"
                                             class="w-[320px] h-[320px] absolute bottom-0 -left-3">
-                                        <img src="/images/teams/redbull.png" alt="Red Bull Racing"
-                                            class="w-[240px]  absolute top-0 right-[5px]">
-                                        <img src="/images/flags/nl-flag.png" alt="NL"
+                                        <img src="/images/teams/haas.png" alt="Haas"
+                                            class="max-3xsm:hidden h-[140px] absolute top-4 right-[10px]">
+                                        <img src="/images/flags/den-flag.png" alt="DEN"
                                             class="w-[120px] absolute right-5 bottom-5">
                                     </div>
                                 </div>
@@ -45,18 +45,18 @@
                                 <div>Birth Place</div>
                             </div>
                             <div class="flex flex-col space-y-1">
+                                <div>Kevin Magnussen</div>
+                                <div>Haas</div>
+                                <div>Denmark</div>
+                                <div>1</div>
+                                <div>185</div>
+                                <div>154</div>
                                 <div>0</div>
-                                <div>0</div>
-                                <div>0</div>
-                                <div>0</div>
-                                <div>0</div>
-                                <div>0</div>
+                                <div>2 (x1)</div>
+                                <div>1</div>
                                 <div>2</div>
-                                <div>0 (x0)</div>
-                                <div>0</div>
-                                <div>0</div>
-                                <div>30/09/1997</div>
-                                <div>0</div>
+                                <div>05/10/1992</div>
+                                <div>Roskilde, Denmark</div>
                             </div>
                         </div>
                     </div>

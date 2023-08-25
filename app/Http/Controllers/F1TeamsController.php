@@ -66,9 +66,9 @@ class F1TeamsController extends Controller
         return view('f1/teams/williams');
     }
 
-    // Alpha Tauri
+    // AlphaTauri
     public function alphatauri()
     {
-        return view('f1/teams/alpha-tauri');
+        return view('f1/teams/alphatauri');
     }
 }

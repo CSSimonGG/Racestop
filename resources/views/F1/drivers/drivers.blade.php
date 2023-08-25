@@ -560,7 +560,7 @@
 
                                     <img src="/images/drivers/yuki-tsunoda.png" alt="Yuki Tsunoda"
                                         class="w-[220px] h-[220px] absolute -top-5 -left-3">
-                                    <img src="/images/teams/alphatauri.png" alt="Alpha Tauri"
+                                    <img src="/images/teams/alphatauri.png" alt="AlphaTauri"
                                         class="h-[60px] absolute top-8 right-[8px]">
                                     <img src="/images/flags/jpn-flag.png" alt="JPN"
                                         class="w-[80px] absolute right-5 bottom-5 border border-dark-gray">
@@ -571,7 +571,7 @@
                                             Yuki Tsunoda
                                         </h1>
                                         <h2>
-                                            Alpha Tauri
+                                            AlphaTauri
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">
@@ -590,7 +590,7 @@
 
                                     <img src="/images/drivers/daniel-ricciardo.png" alt="Daniel Ricciardo"
                                         class="w-[220px] h-[220px] absolute -top-5 ">
-                                    <img src="/images/teams/alphatauri.png" alt="Alpha Tauri"
+                                    <img src="/images/teams/alphatauri.png" alt="AlphaTauri"
                                         class="h-[60px] absolute top-8 right-[8px]">
                                     <img src="/images/flags/aus-flag.png" alt="AUS"
                                         class="w-[80px] absolute right-5 bottom-5 border border-dark-gray">
@@ -601,7 +601,7 @@
                                             Daniel Ricciardo
                                         </h1>
                                         <h2>
-                                            Alpha Tauri
+                                            AlphaTauri
                                         </h2>
                                     </span>
                                     <div class="absolute top-2 right-2 text-2xl font-extrabold">

@@ -307,7 +307,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/f1/teams/alpha-tauri">
+                        <a href="/f1/teams/alphatauri">
                             <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
@@ -318,7 +318,7 @@
                                         viewBox="0 0 64 200" fill="none" class="absolute right-0 top-0">
                                         <path d="M64 200H-4.76837e-07L64 0L64 100L64 200Z" fill="#5e8faa" />
                                     </svg>
-                                    <img src="/images/teams/alphatauri.png" alt="Alpha Tauri"
+                                    <img src="/images/teams/alphatauri.png" alt="AlphaTauri"
                                         class="w-[172px] absolute top-4">
                                     <img src="/images/drivers/yuki-tsunoda.png" alt="Yuki Tsunoda"
                                         class="w-[160px] h-[160px] absolute bottom-0 -left-[10px]">
@@ -328,7 +328,7 @@
                                 <div class="h-[50px]  w-[322px] border relative">
                                     <span class="absolute left-2">
                                         <h1 class="font-bold text-night">
-                                            Alpha Tauri
+                                            AlphaTauri
                                         </h1>
                                         <h2>
                                             Yuki Tsunoda & Daniel Ricciardo

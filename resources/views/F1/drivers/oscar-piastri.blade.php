@@ -23,7 +23,7 @@
                                             class="max-5xsm:w-[250px] max-4xsm:5xsm:w-[300px] 4xsm:w-[320px] 4xsm:h-[320px] absolute bottom-0 -left-3">
                                         <img src="/images/teams/mclaren.png" alt="McLaren"
                                             class="max-3xsm:hidden w-[200px] absolute top-8 right-[16px]">
-                                        <img src="/images/flags/nl-flag.png" alt="NL"
+                                        <img src="/images/flags/aus-flag.png" alt="AUS"
                                             class="max-4xsm:5xsm:mr-5 max-4xsm:w-[80px] 4xsm:w-[120px] absolute right-5 bottom-5">
                                     </div>
                                 </div>
