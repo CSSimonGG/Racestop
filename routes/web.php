@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\F1GPController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\PolicyController;
@@ -84,8 +85,8 @@ Route::get('/f1/home', function () {
 // F1 News
 Route::get('/f1/news', [Formula1Controller::class, 'news']);
 
-// F1 Calender
-Route::get('/f1/calender', [Formula1Controller::class, 'calender']);
+// F1 Calendar
+Route::get('/f1/calendar', [Formula1Controller::class, 'calendar']);
 
 // F1 Statistics
 Route::get('/f1/statistics', [Formula1Controller::class, 'stats']);
@@ -202,6 +203,76 @@ Route::get('/f1/teams/williams', [F1TeamsController::class, 'williams']);
 
 // AlphaTauri
 Route::get('/f1/teams/alphatauri', [F1TeamsController::class, 'alphatauri']);
+
+/**
+ * F1 Grands Prix
+ */
+
+// Bahrain GP
+Route::get('/f1/gp/bahrain-gp', [F1GPController::class, 'bahraingp']);
+
+// Saudi Arabian GP
+Route::get('/f1/gp/saudi-arabian-gp', [F1GPController::class, 'saudiarabiangp']);
+
+// Australian GP
+Route::get('/f1/gp/australian-gp', [F1GPController::class, 'australiangp']);
+
+// Azerbaijan GP
+Route::get('/f1/gp/azerbaijan-gp', [F1GPController::class, 'azerbaijangp']);
+
+// Miami GP
+Route::get('/f1/gp/miami-gp', [F1GPController::class, 'miamigp']);
+
+// Monaco GP
+Route::get('/f1/gp/monaco-gp', [F1GPController::class, 'monacogp']);
+
+// Spanish GP
+Route::get('/f1/gp/spanish-gp', [F1GPController::class, 'spanishgp']);
+
+// Canadian GP
+Route::get('/f1/gp/canadian-gp', [F1GPController::class, 'canadiangp']);
+
+// Austrian GP
+Route::get('/f1/gp/austrian-gp', [F1GPController::class, 'austriangp']);
+
+// British GP
+Route::get('/f1/gp/british-gp', [F1GPController::class, 'britishgp']);
+
+// Hungarian GP
+Route::get('/f1/gp/hungarian-gp', [F1GPController::class, 'hungariangp']);
+
+// Belgian GP
+Route::get('/f1/gp/belgian-gp', [F1GPController::class, 'belgiangp']);
+
+// Dutch GP
+Route::get('/f1/gp/dutch-gp', [F1GPController::class, 'dutchgp']);
+
+// Italian GP
+Route::get('/f1/gp/italian-gp', [F1GPController::class, 'italiangp']);
+
+// Singapore GP
+Route::get('/f1/gp/singapore-gp', [F1GPController::class, 'singaporegp']);
+
+// Japanese GP
+Route::get('/f1/gp/japanese-gp', [F1GPController::class, 'japanesegp']);
+
+// Qatar GP
+Route::get('/f1/gp/qatar-gp', [F1GPController::class, 'qatargp']);
+
+// United States GP
+Route::get('/f1/gp/united-states-gp', [F1GPController::class, 'usgp']);
+
+// Mexican GP
+Route::get('/f1/gp/mexicangp', [F1GPController::class, 'mexicangp']);
+
+// Brazilian GP
+Route::get('/f1/gp/brazilian-gp', [F1GPController::class, 'brazilian-gp']);
+
+// Las Vegas GP
+Route::get('/f1/gp/las-vegas-gp', [F1GPController::class, 'lasvegasgp']);
+
+// Abu Dhabi GP
+Route::get('/f1/gp/abu-dhabi-gp', [F1GPController::class, 'abudhabigp']);
 
 /**
  * Championships Routes

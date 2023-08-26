@@ -21,10 +21,10 @@ class Formula1Controller extends Controller
             ->with('posts', Post::orderBy('id', 'DESC')->get());
     }
 
-    // F1 Calender
-    public function calender()
+    // F1 Calendar
+    public function calendar()
     {
-        return view('f1/calender');
+        return view('f1/calendar');
     }
 
     // F1 Statistics

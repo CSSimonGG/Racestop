@@ -276,7 +276,7 @@ export default {
                     </li>
                     <li>
                         <span class="hover:bg-yellow px-6 pb-5 pt-[19px]">
-                            <a href="/f1/calender">F1 CALENDER</a>
+                            <a href="/f1/calendar">F1 CALENDAR</a>
                         </span>
                     </li>
                     <li>
@@ -395,7 +395,7 @@ export default {
                         <a href="/f1/news">F1 News</a>
                     </li>
                     <li class="move-right-on-hover">
-                        <a href="/f1/calender">F1 Calendar</a>
+                        <a href="/f1/calendar">F1 Calendar</a>
                     </li>
                     <li class="move-right-on-hover">
                         <a href="/f1/standings">F1 Standings</a>
