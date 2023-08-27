@@ -131,8 +131,8 @@
                                     class="text-sm border-x border-b border-platinum bg-white w-[624px] h-[52px] py-4 grid grid-cols-12 space-x-5">
                                     <div class="col-span-3">
                                         <span class="ml-2 font-bold">
-                                            <img class="h-[16px] inline" src="/images/flags/aus-flag.png"
-                                                alt="AUS">
+                                            <img class="h-[16px] inline" src="/images/flags/aut-flag.png"
+                                                alt="AUT">
                                             <span> Austrian GP</span>
                                         </span>
                                     </div>

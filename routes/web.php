@@ -263,10 +263,10 @@ Route::get('/f1/gp/qatar-gp', [F1GPController::class, 'qatargp']);
 Route::get('/f1/gp/united-states-gp', [F1GPController::class, 'usgp']);
 
 // Mexican GP
-Route::get('/f1/gp/mexicangp', [F1GPController::class, 'mexicangp']);
+Route::get('/f1/gp/mexican-gp', [F1GPController::class, 'mexicangp']);
 
 // Brazilian GP
-Route::get('/f1/gp/brazilian-gp', [F1GPController::class, 'brazilian-gp']);
+Route::get('/f1/gp/brazilian-gp', [F1GPController::class, 'braziliangp']);
 
 // Las Vegas GP
 Route::get('/f1/gp/las-vegas-gp', [F1GPController::class, 'lasvegasgp']);
