@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -22,7 +23,8 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('news.create');
+        return view('news.create')
+            ->with('categories', Category::orderBy('id')->get());
     }
 
     /**
@@ -34,7 +36,7 @@ class PostsController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg|max:5048',
-            'category' => 'required'
+            'category_id' => 'required'
         ]);
 
         $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
@@ -48,7 +50,7 @@ class PostsController extends Controller
             'description' => $request->input('description'),
             'slug' => $slug,
             'image_path' => $newImageName,
-            'category' => $request->input('category'),
+            'category_id' => $request->input('category_id'),
             'user_id' => auth()->user()->id
         ]);
 
@@ -92,7 +94,7 @@ class PostsController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg|max:5048',
-            'category' => 'required'
+            'category_id' => 'required'
         ]);
 
         $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
@@ -105,7 +107,7 @@ class PostsController extends Controller
                 'description' => $request->input('description'),
                 'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
                 'image_path' => $newImageName,
-                'category' => $request->input('category'),
+                'category_id' => $request->input('category_id'),
                 'user_id' => auth()->user()->id
             ]);
 

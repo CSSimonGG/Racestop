@@ -49,15 +49,10 @@
 
                     <div class="mb-12">
                         <label for="">Tags: </label>
-                        <select name="category" id="category">
-                            <option value="F1">F1</option>
-                            <option value="F2">F2</option>
-                            <option value="F3">F3</option>
-                            <option value="motogp">MotoGP</option>
-                            <option value="formulae">Formula E</option>
-                            <option value="indycar">Indycar</option>
-                            <option value="nascar">Nascar</option>
-                            <option value="enduranceracing">Endurance Racing</option>
+                        <select name="category_id" id="category_id">
+                            @foreach($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->category }}</option>
+                            @endforeach
                         </select>
                     </div>
 
