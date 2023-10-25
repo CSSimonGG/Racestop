@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\F1GPController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
@@ -26,6 +27,10 @@ use App\Http\Controllers\ChampionshipsController;
 
 // Admin Dashboard
 Route::get('admin', [PagesController::class, 'admin'])->middleware('role:admin');
+
+// Manage Categories
+Route::get('categories', [CategoriesController::class, 'index'])->middleware('role:admin');
+
 
 // Show Home Page
 Route::get('/', [PagesController::class, 'index']);
@@ -107,7 +112,7 @@ Route::get('/f1/live', [Formula1Controller::class, 'live']);
 // F1 Drivers
 Route::get('/f1/drivers', [F1DriversController::class, 'drivers']);
 
-// Max Verstappen 
+// Max Verstappen
 Route::get('/f1/drivers/max-verstappen', [F1DriversController::class, 'maxverstappen']);
 
 // Sergio Perez
@@ -282,7 +287,7 @@ Route::get('/f1/gp/abu-dhabi-gp', [F1GPController::class, 'abudhabigp']);
 Route::get('/championships', [ChampionshipsController::class, 'championships']);
 
 
-// MotoGP 
+// MotoGP
 Route::get('/motogp', [ChampionshipsController::class, 'motogp']);
 
 // F2
