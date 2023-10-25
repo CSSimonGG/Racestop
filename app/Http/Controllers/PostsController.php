@@ -86,9 +86,17 @@ class PostsController extends Controller
      */
     public function edit($slug)
     {
-        return view('news.edit')
-            ->with('post', Post::where('slug', $slug)->first())
-            ->with('categories', Category::orderBy('id')->get());
+        $post = Post::where('slug', $slug)->first();
+
+        if ($post) {
+            return view('news.edit')
+                ->with('post', $post)
+                ->with('categories', Category::orderBy('id')->get());
+        }
+        else
+        {
+            return response()->view('errors.404', [], 404);
+        }
     }
 
     /**
