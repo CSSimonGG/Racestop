@@ -60,20 +60,32 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  string  $slug
-     * @return \Illuminate\Http\Response
+     * @param string  $slug
+     * @param int $id
+     * @ return \Illuminate\Http\Response
      */
     public function show($slug)
     {
-        return view('news.show')
-            ->with('post', Post::where('slug', $slug)->first());
+        $post = Post::where('slug', $slug)->first();
+
+        if ($post) {
+            $category_id = $post->category_id;
+
+            return view('news.show')
+                ->with('post', $post)
+                ->with('category', Category::find($category_id));
+        }
+        else
+        {
+            return response()->view('errors.404', [], 404);
+        }
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  string  $slug
-     * @return \Illuminate\Http\Response
+     * @ return \Illuminate\Http\Response
      */
     public function edit($slug)
     {
