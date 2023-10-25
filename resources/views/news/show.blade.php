@@ -8,7 +8,7 @@
                 <div>
                     <div class="w-[665px]">
                         <h2 class="font-black uppercase italic text-light-red mb-2">
-                            {{ $category->category }} news
+                            {{ $post->category->category }} news
                         </h2>
                         <h1 class="text-3xl font-extrabold">
                             {{ $post->title }}

@@ -69,11 +69,8 @@ class PostsController extends Controller
         $post = Post::where('slug', $slug)->first();
 
         if ($post) {
-            $category_id = $post->category_id;
-
             return view('news.show')
-                ->with('post', $post)
-                ->with('category', Category::find($category_id));
+                ->with('post', $post);
         }
         else
         {

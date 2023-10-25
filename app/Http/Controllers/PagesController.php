@@ -10,7 +10,8 @@ class PagesController extends Controller
     public function index()
     {
         return view('home')
-            ->with('posts', Post::orderBy('id', 'DESC')->get());
+            ->with('posts', Post::orderBy('id', 'DESC')->get())
+            ->with('categories');
     }
 
     public function admin()

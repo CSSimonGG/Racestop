@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="absolute bottom-0 pl-5 pb-4 text-white font-bold">
                                     <div class="uppercase 4xsm:text-xl text-light-red font-bold">
-                                        {{ $posts[0]->category }}
+                                        {{ $posts[0]->category->category }}
                                     </div>
                                     <div class="max-4xsm:text-lg 4xsm:text-2xl break-words lg:w-[600px] line-clamp-2">
                                         {{ $posts[0]->title }}
@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="absolute bottom-0 p-3 text-white font-bold">
                                         <div class="uppercase 4xsm:text-xl text-light-red font-bold">
-                                            {{ $posts[1]->category }}
+                                            {{ $posts[1]->category->category }}
                                         </div>
                                         <div
                                             class="max-4xsm:text-lg 4xsm:text-2xl break-words lg:w-[336px] pr-3 line-clamp-2">
@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="w-[200px] pl-3 pr-1">
                                             <div class="uppercase font-semibold text-light-red pt-1">
-                                                {{ $posts[2]->category }}
+                                                {{ $posts[2]->category->category }}
                                             </div>
                                             <div
                                                 class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
@@ -74,7 +74,7 @@
                                         </div>
                                         <div class="w-[200px] pl-3 pr-1">
                                             <div class="uppercase font-semibold text-light-red pt-1">
-                                                {{ $posts[3]->category }}
+                                                {{ $posts[3]->category->category }}
                                             </div>
                                             <div
                                                 class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
@@ -93,7 +93,7 @@
                                         </div>
                                         <div class="w-[200px] pl-3 pr-1">
                                             <div class="uppercase font-semibold text-light-red pt-1">
-                                                {{ $posts[4]->category }}
+                                                {{ $posts[4]->category->category }}
                                             </div>
                                             <div
                                                 class="font-bold hover:underline overflow-hidden break-words line-clamp-2">
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="w-4/6 pr-1">
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                        {{ $posts[2]->category }}
+                                        {{ $posts[2]->category->category }}
                                     </h2>
                                     <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
                                         {{ $posts[2]->title }}
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="w-4/6 pr-1">
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                        {{ $posts[3]->category }}
+                                        {{ $posts[3]->category->category }}
                                     </h2>
                                     <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
                                         {{ $posts[3]->title }}
@@ -157,7 +157,7 @@
                                 </div>
                                 <div class="w-4/6 pr-1">
                                     <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                        {{ $posts[4]->category }}
+                                        {{ $posts[4]->category->category }}
                                     </h2>
                                     <h2 class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
                                         {{ $posts[4]->title }}
@@ -179,7 +179,7 @@
                                             </div>
                                             <div class="w-4/6 pr-1">
                                                 <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                                    {{ $post->category }}
+                                                    {{ $post->category->category }}
                                                 </h2>
                                                 <h2
                                                     class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">
