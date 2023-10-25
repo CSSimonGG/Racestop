@@ -13,7 +13,12 @@ class Post extends Model
     use Sluggable;
     use SoftDeletes;
 
-    protected $fillable = ['title', 'slug', 'description', 'image_path', 'category', 'user_id'];
+    protected $fillable = ['title', 'slug', 'description', 'image_path', 'category_id', 'user_id'];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 
     public function user()
     {
