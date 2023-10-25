@@ -15,10 +15,19 @@
                 <div class="bg-night h-20 flex justify-center">
                     <div class="mt-6">
                         <a href="/create" class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
-                            Create post
+                            Create New Post
                         </a>
                     </div>
                 </div>
+            @endrole
+            @role('admin')
+            <div class="bg-night h-20 flex justify-center">
+                <div class="mt-6">
+                    <a href="/admin" class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
+                        Admin Dashboard
+                    </a>
+                </div>
+            </div>
             @endrole
         @endif
             <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">

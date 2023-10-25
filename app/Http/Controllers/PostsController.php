@@ -104,7 +104,7 @@ class PostsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  string  $slug
-     * @return \Illuminate\Http\Response
+     * @ return \Illuminate\Http\Response
      */
     public function update(Request $request, $slug)
     {
