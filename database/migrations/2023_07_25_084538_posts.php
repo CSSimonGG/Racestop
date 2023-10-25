@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('title');
             $table->longText('description');
             $table->string('image_path');
-            $table->string('category');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

@@ -23,6 +23,9 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(AdminSeeder::class);
 
+        // Category Factory
+        \App\Models\Categories::factory(5)->create();
+
         // Posts Factory
         \App\Models\Post::factory(60)->create();
     }

@@ -21,7 +21,7 @@ class PostFactory extends Factory
             'title' => fake()->catchPhrase(),
             'description' => fake()->paragraph(20),
             'image_path' => 'test.png',
-            'category' => $this->faker->randomElement(['F1', 'F2', 'F3', 'indycar', 'nascar', 'enduranceracing']),
+            'category_id' => 1,
             'user_id' => 1,
         ];
     }
