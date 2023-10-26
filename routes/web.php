@@ -26,11 +26,30 @@ use App\Http\Controllers\ChampionshipsController;
 */
 
 // Admin Dashboard
-Route::get('admin', [PagesController::class, 'admin'])->middleware('role:admin');
+Route::get('/admin', [PagesController::class, 'admin'])->middleware('role:admin');
 
 // Manage Categories
-Route::get('categories', [CategoriesController::class, 'index'])->middleware('role:admin');
+Route::middleware('auth', 'role:admin')->group(
+    function () {
+        // Show Categories
+        Route::get('/categories', [CategoriesController::class, 'index']);
 
+        // Create New Category
+        Route::get('/categories/create', [CategoriesController::class, 'create']);
+
+        // Store New Category
+        Route::post('/categories', [CategoriesController::class, 'store']);
+
+        // Edit Category
+        Route::get('/categories/{id}/edit', [CategoriesController::class, 'edit']);
+
+        // Update Category
+        Route::put('/categories/{id}', [CategoriesController::class, 'update']);
+
+        // Delete Category
+        Route::delete('/categories/{id}/delete', [CategoriesController::class, 'destroy']);
+    }
+);
 
 // Show Home Page
 Route::get('/', [PagesController::class, 'index']);
