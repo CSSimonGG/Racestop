@@ -18,7 +18,7 @@
                 <div class="py-5 flex justify-center flex-col items-center">
                     @foreach($categories as $category)
                         <a href="/categories/{{ $category->id }}/edit">
-                            <h2>{{ $category->category }}</h2>
+                            <h2 class="hover:font-bold">{{ $category->category }}</h2>
                         </a>
                     @endforeach
                 </div>

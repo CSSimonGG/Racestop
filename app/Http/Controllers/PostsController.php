@@ -145,6 +145,6 @@ class PostsController extends Controller
         $post = Post::where('slug', $slug);
         $post->delete();
 
-        return redirect('/');
+        return redirect('/categories');
     }
 }

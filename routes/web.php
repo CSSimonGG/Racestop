@@ -29,7 +29,7 @@ use App\Http\Controllers\ChampionshipsController;
 Route::get('/admin', [PagesController::class, 'admin'])->middleware('role:admin');
 
 // Manage Categories
-Route::middleware('auth', 'role:admin')->group(
+Route::middleware('auth', 'role:writer')->group(
     function () {
         // Show Categories
         Route::get('/categories', [CategoriesController::class, 'index']);
