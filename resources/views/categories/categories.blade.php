@@ -5,7 +5,18 @@
     <div>
         <div class="flex justify-center">
             <span class="bg-white w-[1024px]">
-                <h1 class="text-2xl font-bold my-5 flex justify-center">Manage Categories</h1>
+                <h1 class="text-2xl font-bold mt-5 flex justify-center">Manage Categories</h1>
+
+                <div class="flex justify-center">
+                    <div class="py-5 flex flex-col justify-start">
+                        <h1 class="font-bold text-xl mb-2">Categories:</h1>
+                        @foreach($categories as $category)
+                            <a href="/categories/{{ $category->id }}/edit">
+                                <h2 class="hover:font-bold">{{ $category->category }}</h2>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
 
                 <div class="bg-night h-20 flex justify-center">
                     <div class="mt-6">
@@ -13,14 +24,6 @@
                             New Category
                         </a>
                     </div>
-                </div>
-
-                <div class="py-5 flex justify-center flex-col items-center">
-                    @foreach($categories as $category)
-                        <a href="/categories/{{ $category->id }}/edit">
-                            <h2 class="hover:font-bold">{{ $category->category }}</h2>
-                        </a>
-                    @endforeach
                 </div>
             </span>
         </div>
