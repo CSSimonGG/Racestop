@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\F1raceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\F1GPController;
@@ -110,7 +111,30 @@ Route::get('/f1/home', function () {
 Route::get('/f1/news', [Formula1Controller::class, 'news']);
 
 // F1 Calendar
-Route::get('/f1/calendar', [Formula1Controller::class, 'calendar']);
+Route::get('/f1/calendar', [F1raceController::class, 'index']);
+
+// Manage Calendar
+Route::middleware('auth', 'role:admin')->group(
+    function () {
+        // Show Calendar Items (F1races) Manage Page
+        Route::get('/f1/calendar/manage', [F1raceController::class, 'manage']);
+
+        // Create New Calendar Item (F1race)
+        Route::get('/f1/calendar/create', [F1raceController::class, 'create']);
+
+        // Store New Calendar Item (F1race)
+        Route::post('/f1/calendar/manage', [F1raceController::class, 'store']);
+
+        // Edit Calendar Item (F1race)
+        Route::get('/f1/calendar/{id}/edit', [F1raceController::class, 'edit']);
+
+        // Update Calendar Item (F1race)
+        Route::put('/f1/calendar/{id}', [F1raceController::class, 'update']);
+
+        // Delete Calendar Item (F1race)
+        Route::delete('/f1/calendar/{id}/delete', [F1raceController::class, 'destroy']);
+    }
+);
 
 // F1 Statistics
 Route::get('/f1/statistics', [Formula1Controller::class, 'stats']);

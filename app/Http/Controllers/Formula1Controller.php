@@ -24,7 +24,7 @@ class Formula1Controller extends Controller
     // F1 Calendar
     public function calendar()
     {
-        return view('f1/calendar');
+        //
     }
 
     // F1 Statistics
