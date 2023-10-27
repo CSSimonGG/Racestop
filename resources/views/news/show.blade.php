@@ -42,7 +42,7 @@
                             <form action="/news/{{ $post->slug }}/delete" method="POST" class="mt-4">
                                 @csrf
                                 @method('delete')
-                                <button class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded"
+                                <button class="bg-light-red uppercase text-white text-sm font-bold py-2.5 px-5 rounded"
                                     type="submit">
                                     Delete
                                 </button>
