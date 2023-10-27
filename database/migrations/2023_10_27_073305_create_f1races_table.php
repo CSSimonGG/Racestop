@@ -13,6 +13,21 @@ return new class extends Migration
     {
         Schema::create('f1races', function (Blueprint $table) {
             $table->id();
+            $table->string('grand_prix');
+            $table->string('flag');
+            $table->string('circuit');
+            $table->string('circuit_image');
+            $table->year('first_gp');
+            $table->integer('laps');
+            $table->float('circuit_length', 6, 3);
+            $table->float('race_distance', 7, 3);
+            $table->string('lap_record');
+            $table->string('lap_record_holder');
+            $table->year('lap_record_year');
+            $table->string('last_winner');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->longText('information');
             $table->timestamps();
         });
     }
