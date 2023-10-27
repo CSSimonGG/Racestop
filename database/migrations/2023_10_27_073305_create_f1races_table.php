@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Grandprix;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,8 +14,7 @@ return new class extends Migration
     {
         Schema::create('f1races', function (Blueprint $table) {
             $table->id();
-            $table->string('grand_prix');
-            $table->string('flag');
+            $table->foreignIdFor(Grandprix::class);
             $table->string('circuit');
             $table->string('circuit_image');
             $table->year('first_gp');

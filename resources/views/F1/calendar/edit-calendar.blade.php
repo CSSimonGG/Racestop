@@ -1,11 +1,11 @@
 <x-app-layout>
     <x-slot:title>
-        Create New Category | Racestop.net
+        Edit | {{ $f1race->grand_prix }} | Racestop.net
     </x-slot:title>
     <div>
         <div class="flex justify-center">
             <span class="bg-white w-[1024px]">
-                <h1 class="text-2xl font-bold my-5 flex justify-center">Create New Category</h1>
+                <h1 class="text-2xl font-bold my-5 flex justify-center">Edit Category</h1>
 
                 @if (Auth::check())
 
@@ -32,15 +32,25 @@
                     @endif
 
                     <div class="flex justify-center mb-8">
-                        <form action="/categories" method="POST" enctype="multipart/form-data" class="">
+                        <form action="/categories/{{ $category->id }}" method="POST" enctype="multipart/form-data" class="">
                             @csrf
+                            @method('PUT')
 
-                            <input type="text" name="category" placeholder="Category"
+                            <input type="text" name="category" value="{{ $category->category }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
+                            <br>
                             <button type="submit"
                                     class="uppercase bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl">
-                                Create
+                                Edit Category
+                            </button>
+                        </form>
+                        <form action="/categories/{{ $category->id }}/delete" method="POST" class="mt-4">
+                            @csrf
+                            @method('delete')
+                            <button class="uppercase mt-14 bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl"
+                                    type="submit">
+                                Delete
                             </button>
                         </form>
                     </div>

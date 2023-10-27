@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:title>
-        Create New Category | Racestop.net
+        Create New F1race for Calendar | Racestop.net
     </x-slot:title>
     <div>
         <div class="flex justify-center">
