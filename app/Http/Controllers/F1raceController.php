@@ -86,7 +86,7 @@ class F1raceController extends Controller
                 'category' => $request->input('category'), // CHANGE
             ]);
 
-        return redirect('/calendar');
+        return redirect('/f1/calendar');
     }
 
     /**

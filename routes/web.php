@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\F1raceController;
+use App\Http\Controllers\GrandprixController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\F1GPController;
@@ -133,6 +134,34 @@ Route::middleware('auth', 'role:admin')->group(
 
         // Delete Calendar Item (F1race)
         Route::delete('/f1/calendar/{id}/delete', [F1raceController::class, 'destroy']);
+    }
+);
+
+// Manage Grand Prixs
+Route::middleware('auth', 'role:admin')->group(
+    function () {
+        // Grand Prixs Redirect
+        Route::get('/f1/grand-prixs', function () {
+            return redirect('/f1/grand-prixs/manage');
+        });
+
+        // Show Grand Prixs Management Page
+        Route::get('/f1/grand-prixs/manage', [GrandprixController::class, 'index']);
+
+        // Create New Grand Prix
+        Route::get('/f1/grand-prix/create', [GrandprixController::class, 'create']);
+
+        // Store New Grand Prix
+        Route::post('/f1/grand-prixs/manage', [GrandprixController::class, 'store']);
+
+        // Edit Grand Prix
+        Route::get('/f1/grand-prix/{id}/edit', [GrandprixController::class, 'edit']);
+
+        // Update Grand Prix
+        Route::put('/f1/grand-prix/{id}', [GrandprixController::class, 'update']);
+
+        // Delete Grand Prix
+        Route::delete('/f1/grand-prix/{id}/delete', [GrandprixController::class, 'destroy']);
     }
 );
 

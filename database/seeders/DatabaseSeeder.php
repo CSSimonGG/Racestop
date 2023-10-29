@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminSeeder::class);
 
         // Category Factory
+        $this->call(GrandprixSeeder::class);
+
+        // Category Factory
         \App\Models\Category::factory(5)->create();
 
         // Posts Factory

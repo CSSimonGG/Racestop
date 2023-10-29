@@ -17,7 +17,9 @@ class GrandprixFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'country' => fake()->word(),
+            'grand_prix' => fake()->word(),
+            'flag' => fake()->word() . '.png',
         ];
     }
 }

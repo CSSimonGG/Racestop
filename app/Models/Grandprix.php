@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grandprix extends Model
 {
+    protected $fillable = ['country', 'grand_prix', 'flag'];
+
     use HasFactory;
 }
