@@ -12,7 +12,8 @@ class F1raceController extends Controller
      */
     public function index()
     {
-        return view('f1.calendar.calendar');
+        return view('f1.calendar.calendar')
+            ->with('f1races', F1race::orderBy('id', 'ASC')->get());
     }
     /**
      * Manage calendar items (f1races)
@@ -20,7 +21,8 @@ class F1raceController extends Controller
 
     public function manage()
     {
-        return view('f1.calendar.manage-calendar');
+        return view('f1.calendar.manage-calendar')
+            ->with('f1races', F1race::orderBy('id', 'ASC')->get());
     }
 
     /**

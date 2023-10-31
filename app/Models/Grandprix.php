@@ -7,7 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grandprix extends Model
 {
+    use HasFactory;
+
     protected $fillable = ['country', 'grand_prix', 'flag'];
 
-    use HasFactory;
+    public function f1race()
+    {
+        return $this->hasMany(F1race::class);
+    }
 }

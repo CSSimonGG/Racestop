@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\F1race;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,8 +24,11 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(AdminSeeder::class);
 
-        // Category Factory
+        // Grand Prix Seeder
         $this->call(GrandprixSeeder::class);
+
+        // F1 Race Seeder
+        $this->call(F1raceSeeder::class);
 
         // Category Factory
         \App\Models\Category::factory(5)->create();

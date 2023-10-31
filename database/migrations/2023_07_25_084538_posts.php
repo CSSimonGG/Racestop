@@ -19,9 +19,11 @@ return new class extends Migration
             $table->string('title');
             $table->longText('description');
             $table->string('image_path');
-            $table->foreignIdFor(Category::class);
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
-            $table->foreignIdFor(User::class);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->softDeletes();
         });
     }
