@@ -14,7 +14,8 @@ return new class extends Migration
     {
         Schema::create('f1races', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Grandprix::class);
+            $table->unsignedBigInteger('grandprix_id');
+            $table->foreign('grandprix_id')->references('id')->on('grandprixes');
             $table->string('circuit');
             $table->string('circuit_image');
             $table->year('first_gp');
