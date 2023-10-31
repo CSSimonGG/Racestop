@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
         // F1 Race Seeder
         $this->call(F1raceSeeder::class);
 
-        // Category Factory
-        \App\Models\Category::factory(5)->create();
+        // Category Seeder
+        $this->call(CategorySeeder::class);
 
         // Posts Factory
         \App\Models\Post::factory(60)->create();
