@@ -39,11 +39,37 @@ class F1raceController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'category' => 'required', // CHANGE
+            'grandprix_id' => 'required',
+            'circuit' => 'required',
+            'circuit_image' => 'required',
+            'first_gp' => 'required',
+            'laps' => 'required',
+            'circuit_length' => 'required',
+            'race_distance' => 'required',
+            'lap_record' => 'required',
+            'lap_record_holder' => 'required',
+            'lap_record_year' => 'required',
+            'last_winner' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'information' => 'required',
         ]);
 
         F1race::create([
-            'category' => $request->input('category'), // CHANGE
+            'grandprix_id' => $request->input('grandprix_id'),
+            'circuit' => $request->input('circuit'),
+            'circuit_image' => $request->input('circuit_image'),
+            'first_gp' => $request->input('first_gp'),
+            'laps' => $request->input('laps'),
+            'circuit_length' => $request->input('circuit_length'),
+            'race_distance' => $request->input('race_distance'),
+            'lap_record' => $request->input('lap_record'),
+            'lap_record_holder' => $request->input('lap_record_holder'),
+            'lap_record_year' => $request->input('lap_record_year'),
+            'last_winner' => $request->input('last_winner'),
+            'start_date' => $request->input('start_date'),
+            'end_date' => $request->input('end_date'),
+            'information' => $request->input('information'),
         ]);
 
         return redirect('/f1/calendar/manage');
@@ -80,15 +106,41 @@ class F1raceController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'category' => 'required', // CHANGE
+            'grandprix_id' => 'required',
+            'circuit' => 'required',
+            'circuit_image' => 'required',
+            'first_gp' => 'required',
+            'laps' => 'required',
+            'circuit_length' => 'required',
+            'race_distance' => 'required',
+            'lap_record' => 'required',
+            'lap_record_holder' => 'required',
+            'lap_record_year' => 'required',
+            'last_winner' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'information' => 'required',
         ]);
 
         F1race::where('id', $id)
             ->update([
-                'category' => $request->input('category'), // CHANGE
+                'grandprix_id' => $request->input('grandprix_id'),
+                'circuit' => $request->input('circuit'),
+                'circuit_image' => $request->input('circuit_image'),
+                'first_gp' => $request->input('first_gp'),
+                'laps' => $request->input('laps'),
+                'circuit_length' => $request->input('circuit_length'),
+                'race_distance' => $request->input('race_distance'),
+                'lap_record' => $request->input('lap_record'),
+                'lap_record_holder' => $request->input('lap_record_holder'),
+                'lap_record_year' => $request->input('lap_record_year'),
+                'last_winner' => $request->input('last_winner'),
+                'start_date' => $request->input('start_date'),
+                'end_date' => $request->input('end_date'),
+                'information' => $request->input('information'),
             ]);
 
-        return redirect('/f1/calendar');
+        return redirect('/f1/calendar/manage');
     }
 
     /**

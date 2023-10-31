@@ -15,7 +15,7 @@
                                 <div class="text-start col-span-3">Date</div>
                             </div>
                              @foreach ($f1races as $f1race)
-                            <a href="/f1/calendar/{{ $f1race->grandprix->id }}/edit">
+                            <a href="/f1/calendar/{{ $f1race->id }}/edit">
                                 <div
                                     class="text-sm border border-platinum bg-white w-[624px] h-[60px] py-4 grid grid-cols-12 space-x-5">
                                     <div class="col-span-3">
