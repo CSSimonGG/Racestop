@@ -15,4 +15,9 @@ class Grandprix extends Model
     {
         return $this->hasMany(F1race::class);
     }
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
 }
