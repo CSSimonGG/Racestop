@@ -27,10 +27,6 @@ return new class extends Migration
             $table->integer('podiums');
             $table->integer('pole_positions');
             $table->integer('fastest_laps');
-            $table->unsignedBigInteger('first_driver_id');
-            $table->foreign('first_driver_id')->references('id')->on('drivers');
-            $table->unsignedBigInteger('second_driver_id');
-            $table->foreign('second_driver_id')->references('id')->on('drivers');
             $table->longText('information');
             $table->timestamps();
         });
