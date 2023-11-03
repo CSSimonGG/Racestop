@@ -13,6 +13,23 @@ return new class extends Migration
     {
         Schema::create('drivers', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('driver_number');
+            $table->unsignedBigInteger('f1team_id');
+            $table->foreign('f1team_id')->references('id')->on('f1teams');
+            $table->unsignedBigInteger('country_id');
+            $table->foreign('country_id')->references('id')->on('countries');
+            $table->integer('podiums');
+            $table->float('world_championship_points');
+            $table->integer('grand_prix_entered');
+            $table->integer('world_championships');
+            $table->integer('highest_race_finish');
+            $table->integer('highest_race_finish_times');
+            $table->integer('pole_positions');
+            $table->integer('fastest_laps');
+            $table->date('birth_date');
+            $table->string('birth_place');
+            $table->longText('biography');
             $table->timestamps();
         });
     }
