@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('drivers', function (Blueprint $table) {
             $table->id();
+            $table->boolean('active');
             $table->string('name');
             $table->integer('driver_number');
             $table->unsignedBigInteger('f1team_id');

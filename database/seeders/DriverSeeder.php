@@ -15,6 +15,7 @@ class DriverSeeder extends Seeder
     {
         // Max Verstappen
         Driver::create([
+            'active' => '1',
             'name' => 'Max Verstappen',
             'driver_number' => '1',
             'f1team_id' => '1', // Red Bull Racing
@@ -34,6 +35,7 @@ class DriverSeeder extends Seeder
 
         // Sergio Perez
         Driver::create([
+            'active' => '1',
             'name' => 'Sergio Perez',
             'driver_number' => '11',
             'f1team_id' => '1', // Red Bull Racing
@@ -53,6 +55,7 @@ class DriverSeeder extends Seeder
 
         // Charles Leclerc
         Driver::create([
+            'active' => '1',
             'name' => 'Charles Leclerc',
             'driver_number' => '16',
             'f1team_id' => '2', // Ferrari
@@ -72,6 +75,7 @@ class DriverSeeder extends Seeder
 
         // Carlos Sainz
         Driver::create([
+            'active' => '1',
             'name' => 'Carlos Sainz',
             'driver_number' => '55',
             'f1team_id' => '2', // Ferrari
@@ -91,6 +95,7 @@ class DriverSeeder extends Seeder
 
         // Lewis Hamilton
         Driver::create([
+            'active' => '1',
             'name' => 'Lewis Hamilton',
             'driver_number' => '44',
             'f1team_id' => '3', // Mercedes
@@ -110,6 +115,7 @@ class DriverSeeder extends Seeder
 
         // George Russel
         Driver::create([
+            'active' => '1',
             'name' => 'George Russel',
             'driver_number' => '63',
             'f1team_id' => '3', // Mercedes
@@ -129,6 +135,7 @@ class DriverSeeder extends Seeder
 
         // Lando Norris
         Driver::create([
+            'active' => '1',
             'name' => 'Lando Norris',
             'driver_number' => '4',
             'f1team_id' => '4', // McLaren
@@ -148,6 +155,7 @@ class DriverSeeder extends Seeder
 
         // Oscar Piastri
         Driver::create([
+            'active' => '1',
             'name' => 'Oscar Piastri',
             'driver_number' => '81',
             'f1team_id' => '4', // McLaren
@@ -167,6 +175,7 @@ class DriverSeeder extends Seeder
 
         // Fernando Alonso
         Driver::create([
+            'active' => '1',
             'name' => 'Fernando Alonso',
             'driver_number' => '14',
             'f1team_id' => '5', // Aston Martin
@@ -186,6 +195,7 @@ class DriverSeeder extends Seeder
 
         // Lance Stroll
         Driver::create([
+            'active' => '1',
             'name' => 'Lance Stroll',
             'driver_number' => '18',
             'f1team_id' => '5', // Aston Martin
@@ -205,6 +215,7 @@ class DriverSeeder extends Seeder
 
         // Pierre Gasly
         Driver::create([
+            'active' => '1',
             'name' => 'Pierre Gasly',
             'driver_number' => '10',
             'f1team_id' => '6', // Alpine
@@ -224,6 +235,7 @@ class DriverSeeder extends Seeder
 
         // Esteban Ocon
         Driver::create([
+            'active' => '1',
             'name' => 'Esteban Ocon',
             'driver_number' => '31',
             'f1team_id' => '6', // Alpine
@@ -243,6 +255,7 @@ class DriverSeeder extends Seeder
 
         // Alexander Albon
         Driver::create([
+            'active' => '1',
             'name' => 'Alexander Albon',
             'driver_number' => '23',
             'f1team_id' => '7', // Wiliams
@@ -262,6 +275,7 @@ class DriverSeeder extends Seeder
 
         // Logan Sargeant
         Driver::create([
+            'active' => '1',
             'name' => 'Logan Sargeant',
             'driver_number' => '2',
             'f1team_id' => '7', // Williams
@@ -281,6 +295,7 @@ class DriverSeeder extends Seeder
 
         // Daniel Ricciardo
         Driver::create([
+            'active' => '1',
             'name' => 'Daniel Ricciardo',
             'driver_number' => '3',
             'f1team_id' => '8', // Alpha Tauri
@@ -300,6 +315,7 @@ class DriverSeeder extends Seeder
 
         // Yuki Tsunoda
         Driver::create([
+            'active' => '1',
             'name' => 'Yuki Tsunoda',
             'driver_number' => '22',
             'f1team_id' => '8', // Alpha Tauri
@@ -319,6 +335,7 @@ class DriverSeeder extends Seeder
 
         // Valtteri Bottas
         Driver::create([
+            'active' => '1',
             'name' => 'Valtteri Bottas',
             'driver_number' => '77',
             'f1team_id' => '9', // Alfa Romeo
@@ -338,6 +355,7 @@ class DriverSeeder extends Seeder
 
         // Guanyu Zhou
         Driver::create([
+            'active' => '1',
             'name' => 'Guanyu Zhou',
             'driver_number' => '24',
             'f1team_id' => '9', // Alfa Romeo
@@ -357,6 +375,7 @@ class DriverSeeder extends Seeder
 
         // Nico Hulkenberg
         Driver::create([
+            'active' => '1',
             'name' => 'Nico Hulkenberg',
             'driver_number' => '27',
             'f1team_id' => '10', // Haas
@@ -376,6 +395,7 @@ class DriverSeeder extends Seeder
 
         // Kevin Magnussen
         Driver::create([
+            'active' => '1',
             'name' => 'Kevin Magnussen',
             'driver_number' => '20',
             'f1team_id' => '10', // Haas
@@ -392,5 +412,65 @@ class DriverSeeder extends Seeder
             'birth_place' => 'Roskilde, Denmark',
             'biography' => 'Coming Soon',
         ]);
+
+        // Pedro de la Rosa
+        Driver::create([
+            'active' => '0',
+            'name' => 'Pedro de la Rosa',
+            'driver_number' => '0',
+            'f1team_id' => '2', // Ferrari
+            'country_id' => '165', // Spain
+            'podiums' => '1',
+            'world_championship_points' => '35',
+            'grand_prix_entered' => '107',
+            'world_championships' => '0',
+            'highest_race_finish' => '2',
+            'highest_race_finish_times' => '1',
+            'pole_positions' => '0',
+            'fastest_laps' => '1',
+            'birth_date' => '1971-02-24',
+            'birth_place' => 'Barcelona, Spain',
+            'biography' => 'Coming Soon',
+        ]);
+
+        // Rubens Barrichello
+        Driver::create([
+            'active' => '0',
+            'name' => 'Rubens Barrichello',
+            'driver_number' => '111',
+            'f1team_id' => '3', // Mercedes (previosuly Brawn GP)
+            'country_id' => '24', // Brazil
+            'podiums' => '68',
+            'world_championship_points' => '658',
+            'grand_prix_entered' => '326',
+            'world_championships' => '0',
+            'highest_race_finish' => '1',
+            'highest_race_finish_times' => '11',
+            'pole_positions' => '14',
+            'fastest_laps' => '17',
+            'birth_date' => '1972-05-23',
+            'birth_place' => 'Sao Paulo, Brazil',
+            'biography' => 'Coming Soon',
+        ]);
+
+//        //
+//        Driver::create([
+//            'active' => '',
+//            'name' => '',
+//            'driver_number' => '',
+//            'f1team_id' => '', //
+//            'country_id' => '', //
+//            'podiums' => '',
+//            'world_championship_points' => '',
+//            'grand_prix_entered' => '',
+//            'world_championships' => '',
+//            'highest_race_finish' => '',
+//            'highest_race_finish_times' => '',
+//            'pole_positions' => '',
+//            'fastest_laps' => '',
+//            'birth_date' => '',
+//            'birth_place' => '',
+//            'biography' => 'Coming Soon',
+//        ]);
     }
 }

@@ -23,9 +23,11 @@ return new class extends Migration
             $table->float('circuit_length', 6, 3);
             $table->float('race_distance', 7, 3);
             $table->string('lap_record');
-            $table->string('lap_record_holder');
+            $table->unsignedBigInteger('lap_record_holder_driver_id');
+            $table->foreign('lap_record_holder_driver_id')->references('id')->on('drivers');
             $table->year('lap_record_year');
-            $table->string('last_winner');
+            $table->unsignedBigInteger('last_winner_driver_id');
+            $table->foreign('last_winner_driver_id')->references('id')->on('drivers');
             $table->date('start_date');
             $table->date('end_date');
             $table->longText('information');

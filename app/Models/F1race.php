@@ -10,7 +10,12 @@ class F1race extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['grandprix_id', 'circuit', 'circuit_image', 'first_gp', 'laps', 'circuit_length', 'race_distance', 'lap_record', 'lap_record_holder', 'lap_record_year', 'last_winner', 'start_date', 'end_date', 'information'];
+    protected $fillable = ['grandprix_id', 'circuit', 'circuit_image', 'first_gp', 'laps', 'circuit_length', 'race_distance', 'lap_record', 'lap_record_holder_driver_id', 'lap_record_year', 'last_winner_driver_id', 'start_date', 'end_date', 'information'];
+
+    public function driver()
+    {
+        return $this->belongsTo(Driver::class);
+    }
 
     public function grandprix()
     {
