@@ -241,195 +241,156 @@ class DriverSeeder extends Seeder
             'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Alexander Albon
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Alexander Albon',
+            'driver_number' => '23',
+            'f1team_id' => '7', // Wiliams
+            'country_id' => '174', // Thailand
+            'podiums' => '2',
+            'world_championship_points' => '228',
+            'grand_prix_entered' => '80',
+            'world_championships' => '0',
+            'highest_race_finish' => '3',
+            'highest_race_finish_times' => '2',
+            'pole_positions' => '0',
+            'fastest_laps' => '0',
+            'birth_date' => '1996-03-23',
+            'birth_place' => 'London, England',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Logan Sargeant
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Logan Sargeant',
+            'driver_number' => '2',
+            'f1team_id' => '7', // Williams
+            'country_id' => '187', // United States of America
+            'podiums' => '0',
+            'world_championship_points' => '1',
+            'grand_prix_entered' => '20',
+            'world_championships' => '0',
+            'highest_race_finish' => '10',
+            'highest_race_finish_times' => '1',
+            'pole_positions' => '0',
+            'fastest_laps' => '0',
+            'birth_date' => '2000-12-31',
+            'birth_place' => 'Fort Lauderdale, Florida, U.S.',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Daniel Ricciardo
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Daniel Ricciardo',
+            'driver_number' => '3',
+            'f1team_id' => '8', // Alpha Tauri
+            'country_id' => '9', // Australia
+            'podiums' => '32',
+            'world_championship_points' => '1317',
+            'grand_prix_entered' => '238',
+            'world_championships' => '0',
+            'highest_race_finish' => '1',
+            'highest_race_finish_times' => '8',
+            'pole_positions' => '3',
+            'fastest_laps' => '16',
+            'birth_date' => '1989-07-01',
+            'birth_place' => 'Perth, Australia',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Yuki Tsunoda
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Yuki Tsunoda',
+            'driver_number' => '22',
+            'f1team_id' => '8', // Alpha Tauri
+            'country_id' => '86', // Japan
+            'podiums' => '0',
+            'world_championship_points' => '57',
+            'grand_prix_entered' => '64',
+            'world_championships' => '0',
+            'highest_race_finish' => '4',
+            'highest_race_finish_times' => '1',
+            'pole_positions' => '0',
+            'fastest_laps' => '1',
+            'birth_date' => '2000-05-11',
+            'birth_place' => 'Sagamihara, Japan',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Valtteri Bottas
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Valtteri Bottas',
+            'driver_number' => '77',
+            'f1team_id' => '9', // Alfa Romeo
+            'country_id' => '60', // Finland
+            'podiums' => '67',
+            'world_championship_points' => '1797',
+            'grand_prix_entered' => '221',
+            'world_championships' => '0',
+            'highest_race_finish' => '1',
+            'highest_race_finish_times' => '10',
+            'pole_positions' => '20',
+            'fastest_laps' => '19',
+            'birth_date' => '1989-08-28',
+            'birth_place' => 'Nastola, Finland',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Guanyu Zhou
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Guanyu Zhou',
+            'driver_number' => '24',
+            'f1team_id' => '9', // Alfa Romeo
+            'country_id' => '37', // China
+            'podiums' => '0',
+            'world_championship_points' => '12',
+            'grand_prix_entered' => '42',
+            'world_championships' => '0',
+            'highest_race_finish' => '8',
+            'highest_race_finish_times' => '1',
+            'pole_positions' => '0',
+            'fastest_laps' => '2',
+            'birth_date' => '1999-05-30',
+            'birth_place' => 'Shanghai, China',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Nico Hulkenberg
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Nico Hulkenberg',
+            'driver_number' => '27',
+            'f1team_id' => '10', // Haas
+            'country_id' => '65', // Germany
+            'podiums' => '0',
+            'world_championship_points' => '0',
+            'grand_prix_entered' => '204',
+            'world_championships' => '0',
+            'highest_race_finish' => '4',
+            'highest_race_finish_times' => '3',
+            'pole_positions' => '1',
+            'fastest_laps' => '2',
+            'birth_date' => '1997-09-30',
+            'birth_place' => 'Emmerich am Rhein, Germany',
+            'biography' => 'Coming Soon',
         ]);
 
-        //
+        // Kevin Magnussen
         Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
+            'name' => 'Kevin Magnussen',
+            'driver_number' => '20',
+            'f1team_id' => '10', // Haas
+            'country_id' => '47', // Denmark
+            'podiums' => '1',
+            'world_championship_points' => '186',
+            'grand_prix_entered' => '162',
+            'world_championships' => '0',
+            'highest_race_finish' => '2',
+            'highest_race_finish_times' => '1',
+            'pole_positions' => '1',
+            'fastest_laps' => '2',
+            'birth_date' => '1992-10-05',
+            'birth_place' => 'Roskilde, Denmark',
+            'biography' => 'Coming Soon',
         ]);
-
-        //
-        Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
-        ]);
-
-        //
-        Driver::create([
-            'name' => '',
-            'driver_number' => '',
-            'f1team_id' => '',
-            'country_id' => '',
-            'podiums' => '',
-            'world_championship_points' => '',
-            'grand_prix_entered' => '',
-            'world_championships' => '',
-            'highest_race_finish' => '',
-            'highest_race_finish_times' => '',
-            'pole_positions' => '',
-            'fastest_laps' => '',
-            'birth_date' => '',
-            'birth_place' => '',
-            'biography' => '',
-        ]);
-
     }
 }
