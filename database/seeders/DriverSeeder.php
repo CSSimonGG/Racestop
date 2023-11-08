@@ -113,10 +113,10 @@ class DriverSeeder extends Seeder
             'biography' => 'Coming Soon',
         ]);
 
-        // George Russel
+        // George Russell
         Driver::create([
             'active' => '1',
-            'name' => 'George Russel',
+            'name' => 'George Russell',
             'driver_number' => '63',
             'f1team_id' => '3', // Mercedes
             'country_id' => '186', // United Kingdom

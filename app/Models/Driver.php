@@ -13,7 +13,7 @@ class Driver extends Model
 
     public function f1team()
     {
-        return $this->belongsTo(F1team::class, 'id', 'f1team_id');
+        return $this->belongsTo(F1team::class);
     }
 
     public function country()
