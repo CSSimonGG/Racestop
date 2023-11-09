@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('f1teams', function (Blueprint $table) {
             $table->id();
+            $table->boolean('active');
             $table->string('name');
             $table->string('logo_path');
             $table->string('team_hex_color');

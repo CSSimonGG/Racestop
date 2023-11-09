@@ -15,6 +15,7 @@ class F1teamSeeder extends Seeder
     {
         // Red Bull Racing
         F1team::create([
+            'active' => '1',
             'name' => 'Red Bull Racing',
             'logo_path' => 'redbull.png',
             'team_hex_color' => '#3671C6',
@@ -33,6 +34,7 @@ class F1teamSeeder extends Seeder
 
         // Ferrari
         F1team::create([
+            'active' => '1',
             'name' => 'Ferrari',
             'logo_path' => 'ferrari.png',
             'team_hex_color' => '#f91536',
@@ -51,6 +53,7 @@ class F1teamSeeder extends Seeder
 
         // Mercedes
         F1team::create([
+            'active' => '1',
             'name' => 'Mercedes AMG F1',
             'logo_path' => 'mercedes.png',
             'team_hex_color' => '#6cd2bf',
@@ -69,6 +72,7 @@ class F1teamSeeder extends Seeder
 
         // McLaren
         F1team::create([
+            'active' => '1',
             'name' => 'McLaren F1',
             'logo_path' => 'mclaren.png',
             'team_hex_color' => '#f58020',
@@ -87,6 +91,7 @@ class F1teamSeeder extends Seeder
 
         // Aston Martin
         F1team::create([
+            'active' => '1',
             'name' => 'Aston Martin F1',
             'logo_path' => 'astonmartin.png',
             'team_hex_color' => '#358c75',
@@ -105,6 +110,7 @@ class F1teamSeeder extends Seeder
 
         // Alpine
         F1team::create([
+            'active' => '1',
             'name' => 'Alpine F1',
             'logo_path' => 'alpine.png',
             'team_hex_color' => '#2293d0',
@@ -123,6 +129,7 @@ class F1teamSeeder extends Seeder
 
         // Williams
         F1team::create([
+            'active' => '1',
             'name' => 'Williams Racing',
             'logo_path' => 'williams.png',
             'team_hex_color' => '#37bedd',
@@ -141,6 +148,7 @@ class F1teamSeeder extends Seeder
 
         // Alpha Tauri
         F1team::create([
+            'active' => '1',
             'name' => 'Scuderia AlphaTauri',
             'logo_path' => 'alphatauri.png',
             'team_hex_color' => '#5e8faa',
@@ -159,6 +167,7 @@ class F1teamSeeder extends Seeder
 
         // Alfa Romeo
         F1team::create([
+            'active' => '1',
             'name' => 'Alfa Romeo F1',
             'logo_path' => 'alfaromeo.png',
             'team_hex_color' => '#c92d4b',
@@ -177,6 +186,7 @@ class F1teamSeeder extends Seeder
 
         // Haas
         F1team::create([
+            'active' => '1',
             'name' => 'Haas F1',
             'logo_path' => 'haas.png',
             'team_hex_color' => '#b6babd',
