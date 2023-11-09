@@ -11,7 +11,8 @@ class F1DriversController extends Controller
     // F1 Drivers
     public function drivers()
     {
-        return view('f1/drivers/drivers');
+        return view('f1/drivers/drivers')
+            ->with('drivers', Driver::where('active', true)->orderby('id', 'ASC')->get());
     }
 
     // Max Verstappen 1
