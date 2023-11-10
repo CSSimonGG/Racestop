@@ -9,39 +9,85 @@
                 <div class="lg:w-[68.75%]">
                     <h1 class="m-5 font-bold text-2xl">F1 Teams</h1>
                     <div class="my-5 4xsm:ml-5 flex flex-wrap">
-                        <a href="/f1/teams/red-bull-racing">
-                            <div class="w-[322px] mb-5 2xsm:mr-5">
-                                <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
-                                        viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
-                                        <path d="M0 0H64L0 200V100V0Z" fill="#3671C6" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
-                                        viewBox="0 0 64 200" fill="none" class="absolute right-0 top-0">
-                                        <path d="M64 200H-4.76837e-07L64 0L64 100L64 200Z" fill="#3671C6" />
-                                    </svg>
-                                    <img src="/images/teams/redbull.png" alt="Red Bull Racing"
-                                        class="h-[105px] absolute top-0">
-                                    <img src="/images/drivers/max-verstappen.png" alt="Max Verstappen"
-                                        class="w-[160px] h-[160px] absolute bottom-0 -left-[9px]">
-                                    <img src="/images/drivers/sergio-perez.png" alt="Sergio Perez"
-                                        class="w-[160px] h-[160px] absolute bottom-0 -right-[10px]">
-                                </div>
-                                <div class="h-[50px]  w-[322px] border relative">
-                                    <span class="absolute left-2">
-                                        <h1 class="font-bold text-night">
-                                            Red Bull Racing
-                                        </h1>
-                                        <h2>
-                                            Max Verstappen & Sergio Perez
-                                        </h2>
-                                    </span>
-                                    <div class="absolute top-1 right-1 text-2xl font-extrabold">
-                                        <img src="/images/flags/aut-flag.png" alt="AUT" class="w-[40px]">
+                        @foreach($f1teams as $f1team)
+                            <a href="/f1/teams/{{ $f1team->name }}">
+                                <div class="w-[322px] mb-5 2xsm:mr-5">
+                                    <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
+                                            viewBox="0 0 64 200" fill="none" class="absolute left-0 top-0">
+                                            <path d="M0 0H64L0 200V100V0Z" fill="{{ $f1team->team_hex_color }}" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="200"
+                                            viewBox="0 0 64 200" fill="none" class="absolute right-0 top-0">
+                                            <path d="M64 200H-4.76837e-07L64 0L64 100L64 200Z" fill="{{ $f1team->team_hex_color }}" />
+                                        </svg>
+                                        <img src="/images/teams/{{ $f1team->logo_path }}" alt="{{ $f1team->name }}"
+                                            class="absolute
+                                            @if($f1team->id == 1) // Red Bull
+                                            {
+                                                h-[105px] top-0
+                                            }
+                                            @elseif($f1team->id == 2) // Ferrari
+                                            {
+                                                h-[125px] top-4
+                                            }
+                                            @elseif($f1team->id == 3) // Mercedes
+                                            {
+                                                h-[105px] top-4
+                                            }
+                                            @elseif($f1team->id == 4) // Mclaren
+                                            {
+                                                h-[85px] top-5
+                                            }
+                                            @elseif($f1team->id == 5) // Aston Martin
+                                            {
+                                                w-[172px] top-8
+                                            }
+                                            @elseif($f1team->id == 6) // Alpine
+                                            {
+                                                h-[85px] top-6
+                                            }
+                                            @elseif($f1team->id == 7) // Williams
+                                            {
+                                                h-[105px] top-4
+                                            }
+                                            @elseif($f1team->id == 8) // AlphaTauri
+                                            {
+                                                w-[172px] top-4
+                                            }
+                                            @elseif($f1team->id == 9) // Alfa Romeo
+                                            {
+                                               h-[105px] top-4
+                                            }
+                                            @elseif($f1team->id == 10) // Haas
+                                            {
+                                                h-[105px] top-4
+                                            }
+                                            @endif
+                                            ">
+                                        <img src="/images/drivers/{{ Str::slug($drivers[0]->name) }}.png" alt="{{ $drivers[0]->name }}"
+                                            class="w-[160px] h-[160px] absolute bottom-0 left-[0px]">
+                                        <img src="/images/drivers/{{ Str::slug($drivers[0]->name) }}.png" alt="{{ $drivers[0]->name }}"
+                                            class="w-[160px] h-[160px] absolute bottom-0 right-[0px]">
+                                    </div>
+                                    <div class="h-[50px] w-[322px] border relative">
+                                        <span class="absolute left-2">
+                                            <h1 class="font-bold text-night">
+                                                {{ $f1team->name }}
+                                            </h1>
+                                            <h2>
+                                                {{ $drivers[0]->name }} & {{ $drivers[0]->name }}
+                                            </h2>
+                                        </span>
+                                        <div class="absolute top-1 right-1 text-2xl font-extrabold">
+                                            <img src="/images/flags/{{ $f1team->country->flag_path }}" alt="AUT" class="w-[40px]">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        @endforeach
+
+
                         <a href="/f1/teams/ferrari">
                             <div class="w-[322px] mb-5 2xsm:mr-5">
                                 <div class="h-[200px] w-[322px] bg-night relative flex justify-center">
