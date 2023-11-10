@@ -196,17 +196,11 @@ Route::get('/f1/drivers/charles-leclerc', [F1DriversController::class, 'charlesl
 // Carlos Sainz
 Route::get('/f1/drivers/carlos-sainz', [F1DriversController::class, 'carlossainz']);
 
-// George Russel
-Route::get('/f1/drivers/george-russel', [F1DriversController::class, 'georgerussell']);
-
 // Lewis Hamilton
 Route::get('/f1/drivers/lewis-hamilton', [F1DriversController::class, 'lewishamilton']);
 
-// Esteban Ocon
-Route::get('/f1/drivers/esteban-ocon', [F1DriversController::class, 'estebanocon']);
-
-// Pierre Gasly
-Route::get('/f1/drivers/pierre-gasly', [F1DriversController::class, 'pierregasly']);
+// George Russell
+Route::get('/f1/drivers/george-russell', [F1DriversController::class, 'georgerussell']);
 
 // Lando Norris
 Route::get('/f1/drivers/lando-norris', [F1DriversController::class, 'landonorris']);
@@ -214,23 +208,17 @@ Route::get('/f1/drivers/lando-norris', [F1DriversController::class, 'landonorris
 // Oscar Piastri
 Route::get('/f1/drivers/oscar-piastri', [F1DriversController::class, 'oscarpiastri']);
 
-// Valtteri Bottas
-Route::get('/f1/drivers/valtteri-bottas', [F1DriversController::class, 'valtteribottas']);
-
-// Guanyu Zhou
-Route::get('/f1/drivers/guanyu-zhou', [F1DriversController::class, 'guanyuzhou']);
-
 // Fernando Alonso
 Route::get('/f1/drivers/fernando-alonso', [F1DriversController::class, 'fernandoalonso']);
 
 // Lance Stroll
 Route::get('/f1/drivers/lance-stroll', [F1DriversController::class, 'lancestroll']);
 
-// Kevin Magnussen
-Route::get('/f1/drivers/kevin-magnussen', [F1DriversController::class, 'kevinmagnussen']);
+// Pierre Gasly
+Route::get('/f1/drivers/pierre-gasly', [F1DriversController::class, 'pierregasly']);
 
-// Nico Hulkenberg
-Route::get('/f1/drivers/nico-hulkenberg', [F1DriversController::class, 'nicohulkenberg']);
+// Esteban Ocon
+Route::get('/f1/drivers/esteban-ocon', [F1DriversController::class, 'estebanocon']);
 
 // Alexander Albon
 Route::get('/f1/drivers/alexander-albon', [F1DriversController::class, 'alexanderalbon']);
@@ -238,11 +226,23 @@ Route::get('/f1/drivers/alexander-albon', [F1DriversController::class, 'alexande
 // Logan Sargeant
 Route::get('/f1/drivers/logan-sargeant', [F1DriversController::class, 'logansargeant']);
 
+// Daniel Ricciardo
+Route::get('/f1/drivers/daniel-ricciardo', [F1DriversController::class, 'danielricciardo']);
+
 // Yuki Tsunoda
 Route::get('/f1/drivers/yuki-tsunoda', [F1DriversController::class, 'yukitsunoda']);
 
-// Daniel Ricciardo
-Route::get('/f1/drivers/daniel-ricciardo', [F1DriversController::class, 'danielricciardo']);
+// Valtteri Bottas
+Route::get('/f1/drivers/valtteri-bottas', [F1DriversController::class, 'valtteribottas']);
+
+// Guanyu Zhou
+Route::get('/f1/drivers/guanyu-zhou', [F1DriversController::class, 'guanyuzhou']);
+
+// Nico Hulkenberg
+Route::get('/f1/drivers/nico-hulkenberg', [F1DriversController::class, 'nicohulkenberg']);
+
+// Kevin Magnussen
+Route::get('/f1/drivers/kevin-magnussen', [F1DriversController::class, 'kevinmagnussen']);
 
 /**
  * F1 Teams Routes
@@ -258,28 +258,28 @@ Route::get('/f1/teams/red-bull-racing', [F1TeamsController::class, 'redbullracin
 Route::get('/f1/teams/ferrari', [F1TeamsController::class, 'ferrari']);
 
 // Mercedes
-Route::get('/f1/teams/mercedes', [F1TeamsController::class, 'mercedes']);
-
-// Aston martin
-Route::get('/f1/teams/aston-martin', [F1TeamsController::class, 'astonmartin']);
+Route::get('/f1/teams/mercedes-amg-f1', [F1TeamsController::class, 'mercedes']);
 
 // McLaren
-Route::get('/f1/teams/mclaren', [F1TeamsController::class, 'mclaren']);
+Route::get('/f1/teams/mclaren-f1', [F1TeamsController::class, 'mclaren']);
+
+// Aston martin
+Route::get('/f1/teams/aston-martin-f1', [F1TeamsController::class, 'astonmartin']);
 
 // Alpine
-Route::get('/f1/teams/alpine', [F1TeamsController::class, 'alpine']);
-
-// Alfa Romeo
-Route::get('/f1/teams/alfa-romeo', [F1TeamsController::class, 'alfaromeo']);
-
-// Haas
-Route::get('/f1/teams/haas', [F1TeamsController::class, 'haas']);
+Route::get('/f1/teams/alpine-f1', [F1TeamsController::class, 'alpine']);
 
 // Williams
-Route::get('/f1/teams/williams', [F1TeamsController::class, 'williams']);
+Route::get('/f1/teams/williams-racing', [F1TeamsController::class, 'williams']);
 
 // AlphaTauri
-Route::get('/f1/teams/alphatauri', [F1TeamsController::class, 'alphatauri']);
+Route::get('/f1/teams/scuderia-alphatauri', [F1TeamsController::class, 'alphatauri']);
+
+// Alfa Romeo
+Route::get('/f1/teams/alfa-romeo-f1', [F1TeamsController::class, 'alfaromeo']);
+
+// Haas
+Route::get('/f1/teams/haas-f1', [F1TeamsController::class, 'haas']);
 
 /**
  * F1 Grands Prix
