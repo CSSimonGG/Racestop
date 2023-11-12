@@ -76,7 +76,7 @@
                                                 {{ $f1team->name }}
                                             </h1>
                                             <h2>
-                                                {{ $drivers[0]->name }} & {{ $drivers[0]->name }}
+                                                {{ App\Models\Driver::where('f1team_id', $f1team->id)->value('name') }} & {{ App\Models\Driver::where('f1team_id', $f1team->id)->skip(1)->value('name') }}
                                             </h2>
                                         </span>
                                         <div class="absolute top-1 right-1 text-2xl font-extrabold">
