@@ -5,7 +5,7 @@
     <div>
         <div class="flex justify-center">
             <span class="bg-white w-[1024px]">
-                <h1 class="text-2xl font-bold my-5 flex justify-center">Edit Category</h1>
+                <h1 class="max-2xsm:mt-16 text-2xl font-bold my-5 flex justify-center">Edit Category</h1>
 
                 @if (Auth::check())
 
@@ -32,6 +32,14 @@
                     @endif
 
                     <div class="flex justify-center mb-8">
+                        <form action="/f1/calendar/{{ $f1race->id }}/delete" method="POST" class="mt-4">
+                            @csrf
+                            @method('delete')
+                            <button class="uppercase absolute max-2xsm:top-[66px] max-2xsm:ml-12 2xsm:top-32 bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl"
+                                    type="submit">
+                                Delete
+                            </button>
+                        </form>
                         <form action="/f1/calendar/{{ $f1race->id }}" method="POST" enctype="multipart/form-data" class="">
                             @csrf
                             @method('PUT')
@@ -60,13 +68,13 @@
                             <input type="text" name="lap_record" value="{{ $f1race->lap_record }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
-                            <input type="text" name="lap_record_holder" value="{{ $f1race->lap_record_holder }}"
+                            <input type="text" name="lap_record_holder" value="{{ $f1race->lap_record_holder_driver_id }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
                             <input type="text" name="lap_record_year" value="{{ $f1race->lap_record_year }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
-                            <input type="text" name="last_winner" value="{{ $f1race->last_winner }}"
+                            <input type="text" name="last_winner" value="{{ $f1race->last_winner_driver_id }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
                             <input type="text" name="start_date" value="{{ $f1race->start_date }}"
@@ -82,14 +90,6 @@
                             <button type="submit"
                                     class="uppercase bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl">
                                 Edit Category
-                            </button>
-                        </form>
-                        <form action="/f1/calendar/{{ $f1race->id }}/delete" method="POST" class="mt-4">
-                            @csrf
-                            @method('delete')
-                            <button class="uppercase mt-14 bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl"
-                                    type="submit">
-                                Delete
                             </button>
                         </form>
                     </div>

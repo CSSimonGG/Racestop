@@ -15,156 +15,134 @@ class GrandprixSeeder extends Seeder
     {
         // Bahrain GP
         Grandprix::create([
-            'country' => 'Bahrain',
+            'country_id' => '13',
             'grand_prix' => 'Bahrain GP',
-            'flag' => 'bhr-flag.png',
         ]);
 
         // Saudi Arabian GP
         Grandprix::create([
-            'country' => 'Saudi Arabia',
+            'country_id' => '152',
             'grand_prix' => 'Saudi Arabian GP',
-            'flag' => 'sau-flag.png',
         ]);
 
         // Australian GP
         Grandprix::create([
-            'country' => 'Australia',
+            'country_id' => '9',
             'grand_prix' => 'Australian GP',
-            'flag' => 'aus-flag.png',
         ]);
 
         // Azerbaijan GP
         Grandprix::create([
-            'country' => 'Azerbaijan',
+            'country_id' => '11',
             'grand_prix' => 'Azerbaijan GP',
-            'flag' => 'aze-flag.png',
         ]);
 
         // Miami GP
         Grandprix::create([
-            'country' => 'United States',
+            'country_id' => '187',
             'grand_prix' => 'Miami GP',
-            'flag' => 'usa-flag.png',
         ]);
 
         // Monaco GP
         Grandprix::create([
-            'country' => 'Monaco',
+            'country_id' => '114',
             'grand_prix' => 'Monaco GP',
-            'flag' => 'mco-flag.png',
         ]);
 
         // Spanish GP
         Grandprix::create([
-            'country' => 'Spain',
+            'country_id' => '165',
             'grand_prix' => 'Spanish GP',
-            'flag' => 'esp-flag.png',
         ]);
 
         // Canadian GP
         Grandprix::create([
-            'country' => 'Canada',
+            'country_id' => '33',
             'grand_prix' => 'Canadian GP',
-            'flag' => 'can-flag.png',
         ]);
 
         // Austrian GP
         Grandprix::create([
-            'country' => 'Austria',
+            'country_id' => '10',
             'grand_prix' => 'Austrian GP',
-            'flag' => 'aut-flag.png',
         ]);
 
         // British GP
         Grandprix::create([
-            'country' => 'Great Britain',
+            'country_id' => '186',
             'grand_prix' => 'British GP',
-            'flag' => 'gbr-flag.png',
         ]);
 
         // Hungarian GP
         Grandprix::create([
-            'country' => 'Hungary',
+            'country_id' => '76',
             'grand_prix' => 'Hungarian GP',
-            'flag' => 'hun-flag.png',
         ]);
 
         // Belgian GP
         Grandprix::create([
-            'country' => 'Belgium',
+            'country_id' => '17',
             'grand_prix' => 'Belgian GP',
-            'flag' => 'bel-flag.png',
         ]);
 
         // Dutch GP
         Grandprix::create([
-            'country' => 'The Netherlands',
+            'country_id' => '123',
             'grand_prix' => 'Dutch GP',
-            'flag' => 'nl-flag.png',
         ]);
 
         // Italian GP
         Grandprix::create([
-            'country' => 'Italy',
+            'country_id' => '84',
             'grand_prix' => 'Italian GP',
-            'flag' => 'ita-flag.png',
         ]);
 
         // Singapore GP
         Grandprix::create([
-            'country' => 'Singapore',
+            'country_id' => '157',
             'grand_prix' => 'Singapore GP',
-            'flag' => 'sgp-flag.png',
         ]);
 
         // Japanese GP
         Grandprix::create([
-            'country' => 'Japan',
+            'country_id' => '86',
             'grand_prix' => 'Japanese GP',
-            'flag' => 'jpn-flag.png',
         ]);
 
         // Qatar GP
         Grandprix::create([
-            'country' => 'Qatar',
+            'country_id' => '142',
             'grand_prix' => 'Qatar GP',
-            'flag' => 'qat-flag.png',
         ]);
 
         // United States GP
         Grandprix::create([
-            'country' => 'United States',
+            'country_id' => '187',
             'grand_prix' => 'United States GP',
-            'flag' => 'usa-flag.png',
         ]);
 
         // Mexican GP
         Grandprix::create([
-            'country' => 'Mexico',
+            'country_id' => '111',
             'grand_prix' => 'Mexican GP',
-            'flag' => 'mex-flag.png',
         ]);
 
         // Brazilian GP
         Grandprix::create([
-            'country' => 'Brazil',
+            'country_id' => '24',
             'grand_prix' => 'Brazilian GP',
-            'flag' => 'bra-flag.png',
         ]);
 
         // Las Vegas GP
         Grandprix::create([
-            'country' => 'United States',
+            'country_id' => '187',
             'grand_prix' => 'Las Vegas GP',
-            'flag' => 'usa-flag.png',
         ]);
 
         // Abu Dhabi GP
         Grandprix::create([
-            'country' => 'Abu Dhabi',
+            'country_id' => '185',
             'grand_prix' => 'Abu Dhabi GP',
-            'flag' => 'are-flag.png',
         ]);
     }
 }

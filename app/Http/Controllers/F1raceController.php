@@ -21,7 +21,7 @@ class F1raceController extends Controller
 
     public function manage()
     {
-        return view('f1.calendar.manage-calendar')
+        return view('f1.calendar.management.manage-calendar')
             ->with('f1races', F1race::orderBy('id', 'ASC')->get());
     }
 
@@ -30,7 +30,7 @@ class F1raceController extends Controller
      */
     public function create()
     {
-        return view('f1.calendar.create-calendar');
+        return view('f1.calendar.management.create-calendar');
     }
 
     /**
@@ -91,7 +91,7 @@ class F1raceController extends Controller
         $f1race = F1race::where('id', $id)->first();
 
         if ($f1race) {
-            return view('f1.calendar.edit-calendar')
+            return view('f1.calendar.management.edit-calendar')
                 ->with('f1race', $f1race);
         }
         else

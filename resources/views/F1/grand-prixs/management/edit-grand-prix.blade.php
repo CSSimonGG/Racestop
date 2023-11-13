@@ -5,7 +5,7 @@
     <div>
         <div class="flex justify-center">
             <span class="bg-white w-[1024px]">
-                <h1 class="text-2xl font-bold my-5 flex justify-center">Edit Grand Prix</h1>
+                <h1 class="max-2xsm:mt-16 text-2xl font-bold my-5 flex justify-center">Edit Grand Prix</h1>
 
                 @if (Auth::check())
 
@@ -32,31 +32,28 @@
                     @endif
 
                     <div class="flex justify-center mb-8">
+                        <form action="/f1/grand-prix/{{ $grandprix->id }}/delete" method="POST" class="mt-[110px]">
+                            @csrf
+                            @method('delete')
+                            <button class="uppercase absolute max-2xsm:top-[66px] max-2xsm:ml-12 2xsm:top-32 bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl"
+                                    type="submit">
+                                Delete
+                            </button>
+                        </form>
                         <form action="/f1/grand-prix/{{ $grandprix->id }}" method="POST" enctype="multipart/form-data" class="">
                             @csrf
                             @method('PUT')
 
-                            <input type="text" name="country" placeholder="Country"
+                            <input type="text" name="country" placeholder="Country_id" value="{{ $grandprix->country_id }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
-                            <input type="text" name="grand_prix" placeholder="Grand Prix"
-                                   class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
-
-                            <input type="text" name="flag" placeholder="Flag"
+                            <input type="text" name="grand_prix" placeholder="Grand Prix" value="{{ $grandprix->grand_prix}}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
                             <br>
                             <button type="submit"
                                     class="uppercase bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl">
                                 Edit Category
-                            </button>
-                        </form>
-                        <form action="/f1/grand-prix/{{ $grandprix->id }}/delete" method="POST" class="mt-[110px]">
-                            @csrf
-                            @method('delete')
-                            <button class="uppercase mt-14 bg-light-red text-white text-lg font-bold py-2 px-8 rounded-3xl"
-                                    type="submit">
-                                Delete
                             </button>
                         </form>
                     </div>

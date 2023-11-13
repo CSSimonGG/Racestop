@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('grandprixes', function (Blueprint $table) {
             $table->id();
-            $table->string('country');
+            $table->string('country_id');
             $table->string('grand_prix');
-            $table->string('flag');
             $table->timestamps();
         });
     }

@@ -12,7 +12,7 @@ class GrandprixController extends Controller
      */
     public function index()
     {
-        return view('f1.grand-prixs.grand-prixs')
+        return view('f1.grand-prixs.management.grand-prixs')
             ->with('grandprixs', Grandprix::orderBy('id')->get());
     }
 
@@ -21,7 +21,7 @@ class GrandprixController extends Controller
      */
     public function create()
     {
-        return view('f1.grand-prixs.create-grand-prix');
+        return view('f1.grand-prixs.management.create-grand-prix');
     }
 
     /**
@@ -30,15 +30,13 @@ class GrandprixController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'country' => 'required',
+            'country_id' => 'required',
             'grand_prix' => 'required',
-            'flag' => 'required',
         ]);
 
         Grandprix::create([
-            'country' => $request->input('country'),
+            'country_id' => $request->input('country_id'),
             'grand_prix' => $request->input('grand_prix'),
-            'flag' => $request->input('flag'),
         ]);
 
         return redirect('/f1/grand-prixs/manage');
@@ -60,7 +58,7 @@ class GrandprixController extends Controller
         $grandprix = Grandprix::where('id', $id)->first();
 
         if ($grandprix) {
-            return view('f1.grand-prixs.edit-grand-prix')
+            return view('f1.grand-prixs.management.edit-grand-prix')
                 ->with('grandprix', $grandprix);
         }
         else
@@ -75,16 +73,14 @@ class GrandprixController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'country' => 'required',
+            'country_id' => 'required',
             'grand_prix' => 'required',
-            'flag' => 'required',
         ]);
 
         Grandprix::where('id', $id)
             ->update([
-                'country' => $request->input('country'),
+                'country_id' => $request->input('country_id'),
                 'grand_prix' => $request->input('grand_prix'),
-                'flag' => $request->input('flag'),
             ]);
 
         return redirect('/f1/grand-prixs/manage');

@@ -35,13 +35,10 @@
                         <form action="/f1/grand-prixs/manage" method="POST" enctype="multipart/form-data" class="">
                             @csrf
 
-                            <input type="text" name="country" placeholder="Country"
+                            <input type="text" name="country_id" placeholder="Country ID"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
                             <input type="text" name="grand_prix" placeholder="Grand Prix"
-                                   class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
-
-                            <input type="text" name="flag" placeholder="Flag"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
                             <button type="submit"

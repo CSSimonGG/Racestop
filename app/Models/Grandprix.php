@@ -9,7 +9,7 @@ class Grandprix extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['country', 'grand_prix', 'flag'];
+    protected $fillable = ['country_id', 'grand_prix'];
 
     public function f1race()
     {
