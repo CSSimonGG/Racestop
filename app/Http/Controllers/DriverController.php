@@ -16,23 +16,61 @@ class DriverController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new Driver.
      */
     public function create()
     {
-        //
+        return view('f1.drivers.management.create-driver');
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created Driver in storage.
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'active' => 'required',
+            'name' => 'required',
+            'driver_number' => 'required',
+            'f1team_id' => 'required',
+            'country_id' => 'required',
+            'podiums' => 'required',
+            'world_championship_points' => 'required',
+            'grand_prix_entered' => 'required',
+            'world_championships' => 'required',
+            'highest_race_finish' => 'required',
+            'highest_race_finish_times' => 'required',
+            'pole_positions' => 'required',
+            'fastest_laps' => 'required',
+            'birth_date' => 'required',
+            'birth_place' => 'required',
+            'biography' => 'required',
+        ]);
+
+        Driver::create([
+            'active' => $request->input('active'),
+            'name' => $request->input('name'),
+            'driver_number' => $request->input('driver_number'),
+            'f1team_id' => $request->input('f1team_id'),
+            'country_id' => $request->input('country_id'),
+            'podiums' => $request->input('podiums'),
+            'world_championship_points' => $request->input('world_championship_points'),
+            'grand_prix_entered' => $request->input('grand_prix_entered'),
+            'world_championships' => $request->input('world_championships'),
+            'highest_race_finish' => $request->input('highest_race_finish'),
+            'highest_race_finish_times' => $request->input('highest_race_finish_times'),
+            'pole_positions' => $request->input('pole_positions'),
+            'fastest_laps' => $request->input('fastest_laps'),
+            'birth_date' => $request->input('birth_date'),
+            'birth_place' => $request->input('birth_place'),
+            'biography' => $request->input('biography'),
+        ]);
+
+        return redirect('/f1/drivers');
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified Driver.
      */
     public function show(Driver $driver)
     {
@@ -40,26 +78,77 @@ class DriverController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified Driver.
      */
-    public function edit(Driver $driver)
+    public function edit($id)
     {
-        //
+        $driver = Driver::where('id', $id)->first();
+
+        if ($driver) {
+            return view('f1.drivers.management.edit-driver')
+                ->with('driver', $driver);
+        }
+        else
+        {
+            return response()->view('errors.404', [], 404);
+        }
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified Driver in storage.
      */
-    public function update(Request $request, Driver $driver)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'active' => 'required',
+            'name' => 'required',
+            'driver_number' => 'required',
+            'f1team_id' => 'required',
+            'country_id' => 'required',
+            'podiums' => 'required',
+            'world_championship_points' => 'required',
+            'grand_prix_entered' => 'required',
+            'world_championships' => 'required',
+            'highest_race_finish' => 'required',
+            'highest_race_finish_times' => 'required',
+            'pole_positions' => 'required',
+            'fastest_laps' => 'required',
+            'birth_date' => 'required',
+            'birth_place' => 'required',
+            'biography' => 'required',
+        ]);
+
+        Driver::where('id', $id)
+            ->update([
+                'active' => $request->input('active'),
+                'name' => $request->input('name'),
+                'driver_number' => $request->input('driver_number'),
+                'f1team_id' => $request->input('f1team_id'),
+                'country_id' => $request->input('country_id'),
+                'podiums' => $request->input('podiums'),
+                'world_championship_points' => $request->input('world_championship_points'),
+                'grand_prix_entered' => $request->input('grand_prix_entered'),
+                'world_championships' => $request->input('world_championships'),
+                'highest_race_finish' => $request->input('highest_race_finish'),
+                'highest_race_finish_times' => $request->input('highest_race_finish_times'),
+                'pole_positions' => $request->input('pole_positions'),
+                'fastest_laps' => $request->input('fastest_laps'),
+                'birth_date' => $request->input('birth_date'),
+                'birth_place' => $request->input('birth_place'),
+                'biography' => $request->input('biography'),
+            ]);
+
+        return redirect('/f1/drivers');
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified Driver from storage.
      */
-    public function destroy(Driver $driver)
+    public function destroy($id)
     {
-        //
+        $category = Driver::where('id', $id);
+        $category->delete();
+
+        return redirect('/f1/drivers');
     }
 }

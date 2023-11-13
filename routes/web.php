@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DriverController;
 use App\Http\Controllers\F1raceController;
+use App\Http\Controllers\F1teamController;
 use App\Http\Controllers\GrandprixController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriesController;
@@ -181,6 +183,26 @@ Route::get('/f1/live', [Formula1Controller::class, 'live']);
  * F1 Drivers Routes
  */
 
+// Manage Drivers
+Route::middleware('auth', 'role:admin')->group(
+    function () {
+        // Create New Driver
+        Route::get('/f1/drivers/create', [DriverController::class, 'create']);
+
+        // Store New Driver
+        Route::post('/f1/drivers', [DriverController::class, 'store']);
+
+        // Edit Driver
+        Route::get('/f1/drivers/{id}/edit', [DriverController::class, 'edit']);
+
+        // Update Driver
+        Route::put('/f1/drivers/{id}', [DriverController::class, 'update']);
+
+        // Delete Driver
+        Route::delete('/f1/drivers/{id}/delete', [DriverController::class, 'destroy']);
+    }
+);
+
 // F1 Drivers
 Route::get('/f1/drivers', [F1DriversController::class, 'drivers']);
 
@@ -247,6 +269,26 @@ Route::get('/f1/drivers/kevin-magnussen', [F1DriversController::class, 'kevinmag
 /**
  * F1 Teams Routes
  */
+
+// Manage F1 Teams
+Route::middleware('auth', 'role:admin')->group(
+    function () {
+        // Create New Team
+        Route::get('/f1/teams/create', [F1teamcontroller::class, 'create']);
+
+        // Store New Team
+        Route::post('/f1/teams', [F1teamcontroller::class, 'store']);
+
+        // Edit Team
+        Route::get('/f1/teams/{id}/edit', [F1teamcontroller::class, 'edit']);
+
+        // Update Team
+        Route::put('/f1/teams/{id}', [F1teamcontroller::class, 'update']);
+
+        // Delete Team
+        Route::delete('/f1/teams/{id}/delete', [F1teamcontroller::class, 'destroy']);
+    }
+);
 
 // F1 Teams
 Route::get('/f1/teams', [F1TeamsController::class, 'teams']);
