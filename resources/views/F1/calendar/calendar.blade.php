@@ -26,7 +26,7 @@
                                         </span>
                                     </div>
                                     <span class="col-span-6">{{ $f1race->circuit }}</span>
-                                    <span class="col-span-3">{{ date('d F', strtotime($f1race->start_date)) }}-{{ date('d F', strtotime($f1race->end_date)) }}</span>
+                                    <span class="col-span-3">{{ date('d M', strtotime($f1race->start_date)) }} - {{ date('d M', strtotime($f1race->end_date)) }}</span>
                                 </div>
                             </a>
                             @endforeach
