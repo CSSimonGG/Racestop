@@ -16,7 +16,7 @@ class F1TeamsController extends Controller
 
         if ($f1teams->isNotEmpty()) {
 
-            return view('f1/teams/teams')
+            return view('f1/teams/index/teams')
                 ->with('f1teams', $f1teams)
                 ->with('drivers', $drivers);
         }

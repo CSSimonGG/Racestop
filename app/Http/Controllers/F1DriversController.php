@@ -15,7 +15,7 @@ class F1DriversController extends Controller
 
         if ($drivers->isNotEmpty()) {
 
-            return view('f1/drivers/drivers')
+            return view('f1/drivers/index/drivers')
                 ->with('drivers', $drivers);
         }
         else

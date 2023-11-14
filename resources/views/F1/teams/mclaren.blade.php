@@ -119,6 +119,18 @@
                     </div>
                 </div>
             </div>
+            @if (Auth::check())
+                @role('admin')
+                <div class="bg-night h-20 flex justify-center space-x-3">
+                        <div class="mt-6">
+                            <a href="/f1/teams/{{ $f1team->id }}/edit"
+                               class="bg-light-red uppercase text-white text-sm font-bold py-3 px-5 rounded">
+                                Edit Team
+                            </a>
+                        </div>
+                    </div>
+                @endrole
+            @endif
         </span>
     </div>
 </x-app-layout>
