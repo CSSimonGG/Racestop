@@ -65,6 +65,9 @@
                             <input type="text" name="world_championship_points" placeholder="World Championship Points" value="{{ $driver->world_championship_points }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
+                            <input type="text" name="grand_prix_entered" placeholder="Grand Prix Entered" value="{{ $driver->grand_prix_entered }}"
+                                   class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
+
                             <input type="text" name="world_championships" placeholder="World Championships" value="{{ $driver->world_championships }}"
                                    class="bg-gray block  mb-2 2xsm:w-[600px] h-10 text-lg outline-none">
 
