@@ -143,11 +143,17 @@ class DriverController extends Controller
 
     /**
      * Remove the specified Driver from storage.
+     * Function does not delete, but set driver to not active
      */
     public function destroy($id)
     {
-        $category = Driver::where('id', $id);
-        $category->delete();
+//        $category = Driver::where('id', $id);
+//        $category->delete();
+
+        Driver::where('id', $id)
+            ->update([
+                'active' => 0,
+            ]);
 
         return redirect('/f1/drivers');
     }

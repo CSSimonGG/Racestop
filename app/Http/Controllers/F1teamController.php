@@ -139,11 +139,18 @@ class F1teamController extends Controller
 
     /**
      * Remove the specified F1 Team from storage.
+     * Function does not delete, but set team to not active
      */
     public function destroy($id)
     {
-        $category = F1team::where('id', $id);
-        $category->delete();
+//        $category = F1team::where('id', $id);
+//        $category->delete();
+
+        F1team::where('id', $id)
+            ->update([
+                'active' => 0,
+            ]);
+
 
         return redirect('/f1/teams');
     }
