@@ -6,6 +6,9 @@
         <span class="bg-white w-[1024px]">
             <h1 class="font-bold text-2xl ml-5 my-5">Latest News</h1>
             <div class="max-4xsm:5xsm:ml-2 4xsm:ml-5 mb-12 grid xsm:grid-cols-2 gap-4 xsm:w-[660px]">
+                @if($posts->isEmpty())
+                    <h1>No News</h1>
+                @else
                 @foreach ($posts as $post)
                     <div class="@if ($post->id % 2 === 0) xsm:float-right @else xsm:float-left @endif">
                         <a href="/news/{{ $post->slug }}">
@@ -27,6 +30,7 @@
                         </a>
                     </div>
                 @endforeach
+                @endif
             </div>
 
         </span>
