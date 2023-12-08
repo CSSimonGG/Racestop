@@ -9,7 +9,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderby('id', 'ASC')->get();
+        $posts = Post::orderby('id', 'DESC')->get();
         if ($posts->isNotEmpty()) {
 
             return view('home')
