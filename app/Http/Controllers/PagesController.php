@@ -9,9 +9,17 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('home')
-            ->with('posts', Post::orderBy('id', 'DESC')->get())
-            ->with('categories');
+        $posts = Post::orderby('id', 'ASC')->get();
+        if ($posts->isNotEmpty()) {
+
+            return view('home')
+                ->with('posts', $posts)
+                ->with('categories');
+        }
+        else
+        {
+            return response()->view('errors.500', [], 500);
+        }
     }
 
     public function admin()

@@ -14,8 +14,16 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        return view('categories.categories')
-            ->with('categories', Category::orderBy('id')->get());
+        $categories = Category::orderBy('id')->get();
+        if ($categories->isNotEmpty()) {
+
+            return view('categories.categories')
+                ->with('categories', $categories);
+        }
+        else
+        {
+            return response()->view('errors.500', [], 500);
+        }
     }
 
     /**
