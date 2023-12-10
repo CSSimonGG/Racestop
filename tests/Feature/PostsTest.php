@@ -25,7 +25,7 @@ class PostsTest extends TestCase
     public function test_newspage_is_not_empty(): void
     {
         // Create temporary category
-        Category::create([
+        $category = Category::create([
             'category' => 'Test'
         ]);
 
@@ -38,7 +38,7 @@ class PostsTest extends TestCase
            'title' => 'test',
            'description' => 'test',
            'image_path' => 'test.png',
-           'category_id' => '1',
+           'category_id' => $category->id,
            'user_id' => $user->id,
         ]);
         $response = $this->get('/news');

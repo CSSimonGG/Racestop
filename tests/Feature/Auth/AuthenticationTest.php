@@ -11,7 +11,6 @@ use Tests\TestCase;
 class AuthenticationTest extends TestCase
 {
     use RefreshDatabase;
-//    use DatabaseTransactions;
 
     public function test_login_screen_can_be_rendered(): void
     {
@@ -43,5 +42,12 @@ class AuthenticationTest extends TestCase
         ]);
 
         $this->assertGuest();
+    }
+
+    public function test_unauthenticated_user_cannot_see_admin_dashboard()
+    {
+        $response = $this->get('/admin');
+
+        $response->assertStatus(403);
     }
 }

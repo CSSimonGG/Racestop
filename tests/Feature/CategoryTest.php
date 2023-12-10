@@ -3,7 +3,10 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use Database\Seeders\AdminSeeder;
+use Database\Seeders\CategorySeeder;
 use Database\Seeders\DatabaseSeeder;
+use Database\Seeders\RoleSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -17,7 +20,9 @@ class CategoryTest extends TestCase
     public function test_successfully_login_and_show_categories_page(): void
     {
         // Seed database
-        $this->seed(DatabaseSeeder::class);
+        $this->seed(RoleSeeder::class);
+        $this->seed(AdminSeeder::class);
+        $this->seed(CategorySeeder::class);
 
         // Get admin user
         $user = User::where('email', 'admin@racestop.net')->first();
