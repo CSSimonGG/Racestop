@@ -33,7 +33,7 @@ class PostsTest extends TestCase
         $user = User::factory()->create();
 
         // Create temporary post
-        Post::create([
+        $post = Post::create([
            'slug' => 'test',
            'title' => 'test',
            'description' => 'test',
@@ -45,5 +45,8 @@ class PostsTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertDontSee('No News'); // Check if there is no 'no news'
+        $response->assertViewHas('posts', function ($collection) use ($post) {
+            return $collection->contains($post);
+        });
     }
 }
