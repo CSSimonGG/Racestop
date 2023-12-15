@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:title>
-        Create New Blog Post | Racestop.net
+        Create New Category | Racestop.net
     </x-slot:title>
     <div>
         <div class="flex justify-center">

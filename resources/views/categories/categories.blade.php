@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:title>
-        Admin | Racestop.net
+        Manage Categories | Racestop.net
     </x-slot:title>
     <div>
         <div class="flex justify-center">

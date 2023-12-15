@@ -18,7 +18,7 @@
                                     </div>
                                     <div class="w-4/6 pr-1">
                                         <h2 class="pl-3 pt-1 font-semibold text-light-red uppercase">
-                                            {{ $post->category }}
+                                            {{ $post->category->category }}
                                         </h2>
                                         <h2
                                             class="pl-3 font-bold hover:underline overflow-hidden break-words line-clamp-2">

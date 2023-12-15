@@ -13,13 +13,6 @@ class ChampionshipsController extends Controller
         return view('championships/championships');
     }
 
-    // MotoGP
-    public function motogp()
-    {
-        return view('championships/motogp')
-            ->with('posts', Post::orderBy('id', 'DESC')->get());
-    }
-
     // F2
     public function F2()
     {
@@ -34,10 +27,17 @@ class ChampionshipsController extends Controller
             ->with('posts', Post::orderBy('id', 'DESC')->get());
     }
 
-    // Formula E 
+    // Formula E
     public function fe()
     {
         return view('championships/fe')
+            ->with('posts', Post::orderBy('id', 'DESC')->get());
+    }
+
+    // MotoGP
+    public function motogp()
+    {
+        return view('championships/motogp')
             ->with('posts', Post::orderBy('id', 'DESC')->get());
     }
 
